@@ -1,0 +1,90 @@
+{
+  "script": "scripts/thread_sensitivity.py",
+  "started_utc": "2026-10-20T14:10:55+00:00",
+  "experiment": "bank_dbim_with_duration",
+  "outer_fold": [
+    0,
+    0
+  ],
+  "n_jobs": 2,
+  "cpu_count": 20,
+  "candidates": 96,
+  "thread_vars_one_thread_run": [
+    "OMP_NUM_THREADS",
+    "OPENBLAS_NUM_THREADS",
+    "MKL_NUM_THREADS"
+  ],
+  "runs": [
+    {
+      "run": "default_threads",
+      "seconds": 96.7,
+      "log_line": "2026-10-20 17:12:32,223 INFO bank_dbim_with_duration r0 f0: OneSidedSelection {'max_depth': 5, 'min_samples_leaf': 1} inner=0.8966 test acc=0.8982 (fit 95s, n_jobs 2, peak 0.9 GB)"
+    },
+    {
+      "run": "one_thread",
+      "seconds": 100.2,
+      "log_line": "2026-10-20 17:14:12,459 INFO bank_dbim_with_duration r0 f0: OneSidedSelection {'max_depth': 5, 'min_samples_leaf': 1} inner=0.8966 test acc=0.8982 (fit 99s, n_jobs 2, peak 0.9 GB)"
+    }
+  ],
+  "comparisons": {
+    "default_threads vs one_thread": {
+      "candidates_differing": 37,
+      "max_abs_diff": 0.005916832559168306,
+      "same_rank_1_candidate": true
+    },
+    "default_threads vs saved": {
+      "candidates_differing": 24,
+      "max_abs_diff": 0.0009677062596770147,
+      "same_rank_1_candidate": true
+    },
+    "one_thread vs saved": {
+      "candidates_differing": 29,
+      "max_abs_diff": 0.005916832559168306,
+      "same_rank_1_candidate": true
+    }
+  },
+  "selection": {
+    "default_threads": {
+      "repeat": 0,
+      "fold": 0,
+      "seed": 0,
+      "n_train": 36168,
+      "n_test": 9043,
+      "resampling_triggered": true,
+      "resampling_enabled": true,
+      "imbalanced": "{\"target\": 11.7, \"marital\": 11.52}",
+      "candidates": 96,
+      "failed_candidates": 12,
+      "failed_samplers": "KMeansSMOTE",
+      "selected_sampler": "OneSidedSelection",
+      "selected_clf_params": "{\"max_depth\": 5, \"min_samples_leaf\": 1}",
+      "inner_best_score": 0.8965936739659367,
+      "fit_seconds": 94.95,
+      "predict_seconds": 0.41,
+      "n_jobs": 2,
+      "peak_memory_gb": 0.94
+    },
+    "one_thread": {
+      "repeat": 0,
+      "fold": 0,
+      "seed": 0,
+      "n_train": 36168,
+      "n_test": 9043,
+      "resampling_triggered": true,
+      "resampling_enabled": true,
+      "imbalanced": "{\"target\": 11.7, \"marital\": 11.52}",
+      "candidates": 96,
+      "failed_candidates": 12,
+      "failed_samplers": "KMeansSMOTE",
+      "selected_sampler": "OneSidedSelection",
+      "selected_clf_params": "{\"max_depth\": 5, \"min_samples_leaf\": 1}",
+      "inner_best_score": 0.8965936739659367,
+      "fit_seconds": 98.67,
+      "predict_seconds": 0.283,
+      "n_jobs": 2,
+      "peak_memory_gb": 0.89
+    }
+  },
+  "python": "3.12.3",
+  "git_commit": "62b395284a84124e6e087448cd0e84affb92cdaa"
+}

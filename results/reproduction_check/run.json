@@ -1,0 +1,53 @@
+{
+  "script": "scripts/check_reproduction.py",
+  "started_utc": "2026-10-20T14:02:35+00:00",
+  "wall_clock_seconds": 445.9,
+  "work": "/tmp/claude-1000/-home-komav-PhD-enhancing-fairness/308ee10d-e25e-45e0-ba5f-cb520d99ee71/scratchpad/repro_work",
+  "skip": [],
+  "reuse": true,
+  "git_commit": "8744cd827c00841df231305a58fe2892a9a5eb0f",
+  "python": "3.12.3",
+  "steps": [
+    {
+      "check": "main",
+      "exit_code": 0,
+      "seconds": "reused"
+    },
+    {
+      "check": "baselines",
+      "exit_code": 0,
+      "seconds": "reused"
+    },
+    {
+      "check": "ablation",
+      "exit_code": 0,
+      "seconds": "reused"
+    },
+    {
+      "check": "synthetic",
+      "exit_code": 0,
+      "seconds": "reused"
+    },
+    {
+      "check": "timeseries",
+      "exit_code": 0,
+      "seconds": "reused"
+    },
+    {
+      "check": "detector",
+      "exit_code": 0,
+      "seconds": "reused"
+    },
+    {
+      "check": "cost",
+      "exit_code": 0,
+      "seconds": 3.4
+    },
+    {
+      "check": "cost",
+      "exit_code": 0,
+      "seconds": 430.2
+    }
+  ],
+  "all_identical": false
+}

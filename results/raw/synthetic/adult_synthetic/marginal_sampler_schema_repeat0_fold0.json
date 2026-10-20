@@ -1,0 +1,319 @@
+{
+  "age": {
+    "type": "int",
+    "distribution": "truncnorm",
+    "mean": 38.573505029291475,
+    "std": 13.251327720973586,
+    "min": 17.0,
+    "max": 90.0,
+    "clip": true
+  },
+  "workclass": {
+    "type": "category",
+    "categories": [
+      "Private",
+      "Self-emp-not-inc",
+      "Local-gov",
+      "State-gov",
+      "Self-emp-inc",
+      "Federal-gov",
+      "Without-pay"
+    ],
+    "weights": [
+      0.7370675361998452,
+      0.08372941306510445,
+      0.06803360229910467,
+      0.04321874654581629,
+      0.03664198076710512,
+      0.0308113186691721,
+      0.0004974024538521057
+    ]
+  },
+  "fnlwgt": {
+    "type": "int",
+    "distribution": "truncnorm",
+    "mean": 189632.92906488338,
+    "std": 105496.63605634613,
+    "min": 13492.0,
+    "max": 1490400.0,
+    "clip": true
+  },
+  "education": {
+    "type": "category",
+    "categories": [
+      "HS-grad",
+      "Some-college",
+      "Bachelors",
+      "Masters",
+      "Assoc-voc",
+      "11th",
+      "Assoc-acdm",
+      "10th",
+      "7th-8th",
+      "Prof-school",
+      "9th",
+      "12th",
+      "Doctorate",
+      "5th-6th",
+      "1st-4th",
+      "Preschool"
+    ],
+    "weights": [
+      0.32836851995136507,
+      0.21996241848126452,
+      0.1664640212225047,
+      0.055736708301094284,
+      0.042417375925721236,
+      0.03669724770642202,
+      0.03291146236321432,
+      0.02705316679562286,
+      0.018182823035260306,
+      0.016966950370288492,
+      0.014811539736929369,
+      0.012656129103570245,
+      0.011606057256549132,
+      0.009505913562506909,
+      0.005139825356471759,
+      0.0015198408312147673
+    ]
+  },
+  "education-num": {
+    "type": "int",
+    "distribution": "truncnorm",
+    "mean": 10.108571902288052,
+    "std": 2.5454360152207944,
+    "min": 1.0,
+    "max": 16.0,
+    "clip": true
+  },
+  "marital-status": {
+    "type": "category",
+    "categories": [
+      "Married-civ-spouse",
+      "Never-married",
+      "Divorced",
+      "Separated",
+      "Widowed",
+      "Married-spouse-absent",
+      "Married-AF-spouse"
+    ],
+    "weights": [
+      0.4660108323201061,
+      0.3237537305184039,
+      0.13811208135293468,
+      0.03130872112302421,
+      0.028462473748203824,
+      0.011716591135182933,
+      0.0006355698021443572
+    ]
+  },
+  "occupation": {
+    "type": "category",
+    "categories": [
+      "Craft-repair",
+      "Exec-managerial",
+      "Prof-specialty",
+      "Adm-clerical",
+      "Sales",
+      "Other-service",
+      "Machine-op-inspct",
+      "Transport-moving",
+      "Handlers-cleaners",
+      "Farming-fishing",
+      "Tech-support",
+      "Protective-serv",
+      "Priv-house-serv",
+      "Armed-Forces"
+    ],
+    "weights": [
+      0.13440919641870233,
+      0.13272355476953687,
+      0.13167348292251574,
+      0.12167016690615674,
+      0.12012269260528352,
+      0.10627832430639991,
+      0.06482811981872444,
+      0.05175748867027744,
+      0.045457057588150766,
+      0.03282856195423897,
+      0.030977119487122805,
+      0.0217475406212004,
+      0.005139825356471759,
+      0.0003868685752183044
+    ]
+  },
+  "relationship": {
+    "type": "category",
+    "categories": [
+      "Husband",
+      "Not-in-family",
+      "Own-child",
+      "Unmarried",
+      "Wife",
+      "Other-relative"
+    ],
+    "weights": [
+      0.4124571681220294,
+      0.258345307836852,
+      0.14761799491544159,
+      0.10533878633801261,
+      0.04653476290483033,
+      0.029705979882834087
+    ]
+  },
+  "race": {
+    "type": "category",
+    "categories": [
+      "White",
+      "Black",
+      "Asian-Pac-Islander",
+      "Amer-Indian-Eskimo",
+      "Other"
+    ],
+    "weights": [
+      0.8592627390295126,
+      0.09387089642975573,
+      0.02898750967171438,
+      0.009948049077042113,
+      0.00793080579197524
+    ]
+  },
+  "sex": {
+    "type": "category",
+    "categories": [
+      "Male",
+      "Female"
+    ],
+    "weights": [
+      0.674892229468332,
+      0.32510777053166795
+    ]
+  },
+  "capital-gain": {
+    "type": "int",
+    "distribution": "truncnorm",
+    "mean": 1082.4238145241516,
+    "std": 7361.0562761857245,
+    "min": 0.0,
+    "max": 99999.0,
+    "clip": true
+  },
+  "capital-loss": {
+    "type": "int",
+    "distribution": "truncnorm",
+    "mean": 89.0552669393169,
+    "std": 405.639243521046,
+    "min": 0.0,
+    "max": 4356.0,
+    "clip": true
+  },
+  "hours-per-week": {
+    "type": "int",
+    "distribution": "truncnorm",
+    "mean": 40.900906377804795,
+    "std": 12.01156700910758,
+    "min": 1.0,
+    "max": 99.0,
+    "clip": true
+  },
+  "native-country": {
+    "type": "category",
+    "categories": [
+      "United-States",
+      "Mexico",
+      "Philippines",
+      "Germany",
+      "Puerto-Rico",
+      "Canada",
+      "El-Salvador",
+      "India",
+      "Cuba",
+      "China",
+      "England",
+      "Jamaica",
+      "Italy",
+      "South",
+      "Dominican-Republic",
+      "Japan",
+      "Columbia",
+      "Guatemala",
+      "Vietnam",
+      "Poland",
+      "Haiti",
+      "Portugal",
+      "Iran",
+      "Taiwan",
+      "Peru",
+      "Greece",
+      "Nicaragua",
+      "Ecuador",
+      "France",
+      "Ireland",
+      "Hong",
+      "Cambodia",
+      "Yugoslavia",
+      "Trinadad&Tobago",
+      "Thailand",
+      "Outlying-US(Guam-USVI-etc)",
+      "Scotland",
+      "Hungary",
+      "Laos",
+      "Honduras",
+      "Holand-Netherlands"
+    ],
+    "weights": [
+      0.9133967060904167,
+      0.02000663203271803,
+      0.0063556980214435725,
+      0.0041173869791090965,
+      0.0038963192218414945,
+      0.0035094506466231902,
+      0.0032883828893555873,
+      0.0031778490107217863,
+      0.002790980435503482,
+      0.0025975461478943297,
+      0.002459378799602078,
+      0.0022383110423344755,
+      0.0022383110423344755,
+      0.002183044103017575,
+      0.002127777163700674,
+      0.001989609815408423,
+      0.001934342876091522,
+      0.0019067094064330718,
+      0.0017132751188239195,
+      0.0016303747098485686,
+      0.0014369404222394164,
+      0.0014369404222394164,
+      0.0012987730739471648,
+      0.0012711396042887145,
+      0.0011053387863380127,
+      0.0011053387863380127,
+      0.0009948049077042114,
+      0.0009395379683873107,
+      0.0008566375594119597,
+      0.0007737371504366088,
+      0.0006908367414612579,
+      0.0006355698021443572,
+      0.000607936332485907,
+      0.0005526693931690063,
+      0.000525035923510556,
+      0.0004974024538521057,
+      0.00046976898419365536,
+      0.00044213551453520505,
+      0.00041450204487675473,
+      0.0003592351055598541,
+      2.7633469658450315e-05
+    ]
+  },
+  "income": {
+    "type": "category",
+    "categories": [
+      0,
+      1
+    ],
+    "weights": [
+      0.7521830441030176,
+      0.24781695589698244
+    ]
+  }
+}

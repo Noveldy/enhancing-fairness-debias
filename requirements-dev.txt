@@ -1,0 +1,6 @@
+# Pinned environment for the revised data layer and tests (Phase 1).
+# Phase 2 extends this into a full pinned environment for the experiments.
+# Create with: /usr/bin/python3.12 -m venv venv && venv/bin/pip install -r requirements-dev.txt
+numpy==2.4.6
+pandas==3.0.5
+pytest==9.1.1

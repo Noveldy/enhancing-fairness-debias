@@ -1,0 +1,43 @@
+{
+  "script": "scripts/package_checkpoint.py",
+  "started_utc": "2026-10-20T14:38:48+00:00",
+  "archive": "dist/checkpoint-830.tar.gz",
+  "archive_bytes": 405900803,
+  "sha256": {
+    "bert-sensitive-features-classifier/checkpoint-830/config.json": "0a1bf87d1b571af53292ce7eadb42477c9648afb08bbcdc5549f65c95cac4c7e",
+    "bert-sensitive-features-classifier/checkpoint-830/model.safetensors": "112c4a92d6f03e7e4f47bdeeec2a2de8b7f59cb895b9078147c4412260a12dd2",
+    "bert-sensitive-features-classifier/checkpoint-830/special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+    "bert-sensitive-features-classifier/checkpoint-830/tokenizer.json": "435667fab0c06c165b1283ecb422497c37124f2d6a35b2ac73dc876332fc9518",
+    "bert-sensitive-features-classifier/checkpoint-830/tokenizer_config.json": "ca57a190797b4d53d209dfd812281e9245a4048076e2e1a2255bd9e6d9282626",
+    "bert-sensitive-features-classifier/checkpoint-830/trainer_state.json": "a2338418df769faf92fdd3bbbc268413408f5b87c0a0d3cafad79fa591c0c68b",
+    "bert-sensitive-features-classifier/checkpoint-830/vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "checkpoint-830.tar.gz": "7803fdd3de8eafc54d0f752b7b29f52b92157eab88ee7519cc7d71d028bb22d0"
+  },
+  "left_out": [
+    "optimizer.pt",
+    "scheduler.pt",
+    "rng_state.pth",
+    "training_args.bin"
+  ],
+  "check": {
+    "files_unpacked": [
+      "config.json",
+      "model.safetensors",
+      "special_tokens_map.json",
+      "tokenizer.json",
+      "tokenizer_config.json",
+      "trainer_state.json",
+      "vocab.txt"
+    ],
+    "sha256_match": true,
+    "external_columns": 53,
+    "archive_vs_original_folder_identical": true,
+    "archive_vs_saved_identical": false,
+    "archive_vs_saved_max_abs_diff": 2.4195098924373326e-08,
+    "archive_vs_saved_same_decision": true,
+    "threshold": 0.5
+  },
+  "python": "3.12.3",
+  "torch": "2.13.0+cpu",
+  "transformers": "4.46.1"
+}

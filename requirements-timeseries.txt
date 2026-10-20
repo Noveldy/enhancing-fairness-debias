@@ -1,0 +1,12 @@
+# Extra packages for the Air Quality LSTM experiment (configs/timeseries.yaml).
+# Installed 2026-10-18 (decision G5), with every package
+# already in venv/ held at its version (pip -c on a freeze); only new packages were added.
+# Versions are the ones the original experiments used (old .venv, Python 3.12) and
+# are compatible with the pins in venv/ (numpy 2.4.6, pandas 3.0.5, scikit-learn 1.9.0).
+# CPU-only torch keeps the download small:
+#   venv/bin/pip install --index-url https://download.pytorch.org/whl/cpu torch==2.13.0
+#   venv/bin/pip install -r requirements-timeseries.txt
+torch==2.13.0
+darts==0.46.1
+pytorch-lightning==2.6.5
+torchmetrics==1.9.0

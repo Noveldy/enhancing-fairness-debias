@@ -1,0 +1,79 @@
+{
+    "protected_attributes": [
+        "age",
+        "workclass",
+        "marital-status",
+        "occupation",
+        "relationship",
+        "race",
+        "sex"
+    ],
+    "numeric_columns": [
+        "age",
+        "fnlwgt",
+        "education-num",
+        "capital-gain",
+        "capital-loss",
+        "hours-per-week"
+    ],
+    "datetime_columns": [],
+    "object_columns": [
+        "workclass",
+        "education",
+        "marital-status",
+        "occupation",
+        "relationship",
+        "race",
+        "sex",
+        "native-country",
+        "income"
+    ],
+    "type_of_dataset": "mixed",
+    "domain": "education",
+    "target_variables": [
+        "income"
+    ],
+    "imbalanced_protected_attributes": [
+        {
+            "age": "extremely imbalanced",
+            "minority_class_percentage": 0.76,
+            "minority_class_index": "(75.4, 90.0]"
+        },
+        {
+            "workclass": "extremely imbalanced",
+            "minority_class_percentage": 0.02,
+            "minority_class_index": "Never-worked"
+        },
+        {
+            "marital-status": "extremely imbalanced",
+            "minority_class_percentage": 0.08,
+            "minority_class_index": "Married-AF-spouse"
+        },
+        {
+            "occupation": "extremely imbalanced",
+            "minority_class_percentage": 0.03,
+            "minority_class_index": "Armed-Forces"
+        },
+        {
+            "relationship": "moderately imbalanced",
+            "minority_class_percentage": 3.08,
+            "minority_class_index": "Other-relative"
+        },
+        {
+            "race": "extremely imbalanced",
+            "minority_class_percentage": 0.83,
+            "minority_class_index": "Other"
+        },
+        {
+            "sex": "mildly imbalanced",
+            "minority_class_percentage": 33.15,
+            "minority_class_index": "Female"
+        }
+    ],
+    "imbalanced_target_attributes": [
+        {
+            "income": "mildly imbalanced",
+            "minority_class_percentage": 23.93
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+  "script": "scripts/cost_summary.py",
+  "created_utc": "2026-10-20T11:28:49+00:00",
+  "git_commit": "9375048f3c8fd891b44815d4ef4e825504a3487f",
+  "git_dirty": false,
+  "inputs": {
+    "results/raw/cost/measurements.csv": "2517b653d24db97e4c479cf440cdb810728e868bd09ea4568bae02a274136b6c",
+    "results/raw/cost/tasks.jsonl": "990c97d082cbac9dd565600c83b53447b7da77378c6c4ec2a88779a9178d50d0",
+    "results/raw/cost/run_cost.json": "dae1729eb0484072b93497f2de6dc404a7b8a80a3e00372ed349a65eda7eb156"
+  },
+  "task_status": {
+    "ok": 431
+  }
+}

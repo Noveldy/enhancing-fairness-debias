@@ -1,0 +1,21 @@
+# LSTM choices for the Air Quality experiment, with their full ranges
+# (revision Phase 2.3; R1.7 "which range of each parameter has been analyzed").
+#
+# Selection uses the validation window of each fold only: every grid point is
+# trained once (selection_seed) with early stopping on the validation window,
+# and scored by one-step-ahead MAE on the common [0, 1] scale over that window.
+# The winner is refitted with each evaluation seed; the test window is scored
+# once per seed. Nothing is trained "until maximum accuracy" on test data.
+lstm:
+  selection_seed: 0
+  grid:
+    lr: [1.0e-6, 1.0e-4, 1.0e-3]      # 1e-6 is the paper's value (§3.2.5)
+    input_chunk_length: [7, 24]       # 7 is the original value (model_trainer.py)
+  training:
+    max_epochs: 100                   # original: 100
+    patience: 5                       # original: 3
+    min_delta: 0.0                    # original: 0.05 (on scaled MSE, that stops almost at once)
+    batch_size: 32                    # darts default, as in the original
+    hidden_dim: 25                    # darts default, as in the original
+    training_length: 24               # darts default, as in the original
+    torch_threads: 4

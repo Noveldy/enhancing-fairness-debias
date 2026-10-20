@@ -1,0 +1,56 @@
+# Phase 5: synthetic data (revision Phase 5). Run with:
+#   venv/bin/python run_experiments.py --config configs/synthetic.yaml
+# Same outer folds and seeds as configs/main.yaml and configs/baselines.yaml. Generators are
+# fitted on the complete rows of each outer training fold; classifiers reuse the hyperparameters
+# that the Phase 3 'none' inner CV chose in the same fold (no tuning on synthetic data).
+name: synthetic
+search_space: configs/search_space.yaml   # not used for tuning here; recorded in the run record
+outer:
+  n_repeats: 5
+  n_splits: 5
+seeds: [0, 1, 2, 3, 4]
+inner:
+  n_splits: 3
+n_jobs: 18            # upper limit on outer folds run in parallel; the memory guard may lower it
+
+memory:               # one worker = one outer fold: one random forest at a time + fidelity/privacy
+  per_worker_gb: 1.5
+  main_gb: 2.0
+  reserve_gb: 2.0
+  budget_gb: null
+
+synthetic:
+  generators: [marginal_sampler, independent_marginals, gaussian_copula]
+  privacy_n_query: 2000          # synthetic rows queried for DCR; members/non-members each for the MIA
+  subgroup_min_rows:
+    metrics: 50                  # fidelity metrics within a subgroup need this many real and synthetic rows
+    c2st: 200                    # classifier two-sample test within a subgroup
+
+synthetic_experiments:
+  - name: adult_synthetic
+    dataset: adult
+    variant: full
+    classifier: random_forest
+    domain: finance
+    protected: [sex, race]
+    stratify_by: sex             # outer folds, as in configs/main.yaml
+    condition_on: sex            # copula cells: target x sex (race is modelled inside each cell)
+    protected_as_feature: true   # generators produce every column; 'dropped' is a TSTR convention
+    drop_features: []
+    hyperparams:
+      protected_kept: baselines/adult_baselines_protected_kept
+      protected_dropped: baselines/adult_baselines_protected_dropped
+
+  - name: bank_synthetic
+    dataset: bank
+    variant: full
+    classifier: decision_tree
+    domain: finance
+    protected: [marital]
+    stratify_by: marital
+    condition_on: marital
+    protected_as_feature: true
+    drop_features: [duration]    # F1 (a)
+    hyperparams:
+      protected_kept: baselines/bank_baselines_protected_kept
+      protected_dropped: baselines/bank_baselines_protected_dropped

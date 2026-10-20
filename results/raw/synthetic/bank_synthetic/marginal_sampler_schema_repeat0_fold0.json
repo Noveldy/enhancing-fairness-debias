@@ -1,0 +1,214 @@
+{
+  "age": {
+    "type": "int",
+    "distribution": "truncnorm",
+    "mean": 40.74504921829762,
+    "std": 10.530499716825549,
+    "min": 18.0,
+    "max": 95.0,
+    "clip": true
+  },
+  "job": {
+    "type": "category",
+    "categories": [
+      "management",
+      "blue-collar",
+      "technician",
+      "admin.",
+      "services",
+      "retired",
+      "self-employed",
+      "entrepreneur",
+      "unemployed",
+      "housemaid",
+      "student"
+    ],
+    "weights": [
+      0.21514186450492184,
+      0.21378112333526347,
+      0.1699189345686161,
+      0.11621308627678055,
+      0.092501447596989,
+      0.04927620150550087,
+      0.03549507817023741,
+      0.03248407643312102,
+      0.02947307469600463,
+      0.027793862188766647,
+      0.017921250723798493
+    ]
+  },
+  "marital": {
+    "type": "category",
+    "categories": [
+      "married",
+      "single",
+      "divorced"
+    ],
+    "weights": [
+      0.6006369426751592,
+      0.2828604516502606,
+      0.11650260567458019
+    ]
+  },
+  "education": {
+    "type": "category",
+    "categories": [
+      "secondary",
+      "tertiary",
+      "primary"
+    ],
+    "weights": [
+      0.5328604516502605,
+      0.3094383323682687,
+      0.15770121598147077
+    ]
+  },
+  "default": {
+    "type": "category",
+    "categories": [
+      "no",
+      "yes"
+    ],
+    "weights": [
+      0.9817313259988419,
+      0.01826867400115808
+    ]
+  },
+  "balance": {
+    "type": "int",
+    "distribution": "truncnorm",
+    "mean": 1358.0877533294731,
+    "std": 3039.3739620161073,
+    "min": -8019.0,
+    "max": 102127.0,
+    "clip": true
+  },
+  "housing": {
+    "type": "category",
+    "categories": [
+      "yes",
+      "no"
+    ],
+    "weights": [
+      0.5632310364794442,
+      0.4367689635205559
+    ]
+  },
+  "loan": {
+    "type": "category",
+    "categories": [
+      "no",
+      "yes"
+    ],
+    "weights": [
+      0.8349160393746381,
+      0.1650839606253619
+    ]
+  },
+  "contact": {
+    "type": "category",
+    "categories": [
+      "cellular",
+      "unknown",
+      "telephone"
+    ],
+    "weights": [
+      0.6530978575564563,
+      0.2845975680370585,
+      0.062304574406485236
+    ]
+  },
+  "day": {
+    "type": "int",
+    "distribution": "truncnorm",
+    "mean": 15.79218297625941,
+    "std": 8.30615903936993,
+    "min": 1.0,
+    "max": 31.0,
+    "clip": true
+  },
+  "month": {
+    "type": "category",
+    "categories": [
+      "may",
+      "jul",
+      "aug",
+      "jun",
+      "nov",
+      "apr",
+      "feb",
+      "jan",
+      "oct",
+      "sep",
+      "mar",
+      "dec"
+    ],
+    "weights": [
+      0.30579038795599306,
+      0.15280833815865663,
+      0.1393167342211928,
+      0.11418645049218297,
+      0.08928778228141286,
+      0.06566299942096121,
+      0.05920671685002895,
+      0.030515344528083382,
+      0.016386797915460338,
+      0.011928199189345685,
+      0.010451650260567458,
+      0.0044585987261146496
+    ]
+  },
+  "campaign": {
+    "type": "int",
+    "distribution": "truncnorm",
+    "mean": 2.7610885929357267,
+    "std": 3.0813708790676193,
+    "min": 1.0,
+    "max": 55.0,
+    "clip": true
+  },
+  "pdays": {
+    "type": "int",
+    "distribution": "truncnorm",
+    "mean": 40.30005790387956,
+    "std": 100.24899430286592,
+    "min": -1.0,
+    "max": 871.0,
+    "clip": true
+  },
+  "previous": {
+    "type": "int",
+    "distribution": "truncnorm",
+    "mean": 0.582455124493341,
+    "std": 2.411778569441463,
+    "min": 0.0,
+    "max": 275.0,
+    "clip": true
+  },
+  "poutcome": {
+    "type": "category",
+    "categories": [
+      "unknown",
+      "failure",
+      "other",
+      "success"
+    ],
+    "weights": [
+      0.8170816444701795,
+      0.1095830920671685,
+      0.04079328314997105,
+      0.03254198031268095
+    ]
+  },
+  "y": {
+    "type": "category",
+    "categories": [
+      0,
+      1
+    ],
+    "weights": [
+      0.8837000579038795,
+      0.11629994209612043
+    ]
+  }
+}

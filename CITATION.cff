@@ -1,0 +1,26 @@
+# Citation metadata for the software archive (Zenodo reads this file). Check before publishing.
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Enhancing Fairness: a cross-platform toolkit for identifying and mitigating data bias (back end and revised evaluation)"
+version: "revision-1"
+license: MIT
+repository-code: "https://github.com/Noveldy/enhancing-fairness"
+authors:
+  - family-names: Mavrogiorgos
+    given-names: Konstantinos
+    affiliation: "Department of Digital Systems, University of Piraeus, Piraeus, Greece"
+    orcid: "https://orcid.org/0009-0006-5534-2683"
+  - family-names: Kiourtis
+    given-names: Athanasios
+    affiliation: "Department of Informatics and Telematics, Harokopio University of Athens, Athens, Greece"
+    orcid: "https://orcid.org/0000-0002-1681-3626"
+  - family-names: Mavrogiorgou
+    given-names: Argyro
+    affiliation: "Department of Digital Systems, University of Piraeus, Piraeus, Greece"
+    orcid: "https://orcid.org/0000-0002-1543-5627"
+  - family-names: Kyriazis
+    given-names: Dimosthenis
+    affiliation: "Department of Digital Systems, University of Piraeus, Piraeus, Greece"
+    orcid: "https://orcid.org/0000-0001-7019-7214"
+keywords: [fairness, data bias, resampling, synthetic data, sensitive attributes]

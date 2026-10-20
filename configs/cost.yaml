@@ -1,0 +1,45 @@
+# Phase 7.2-7.3: time and memory of every pipeline stage, and scaling with the number of rows.
+#   venv/bin/python scripts/cost_run.py --config configs/cost.yaml
+# Every task runs in its own process, pinned to one CPU, single-threaded (experiments/cost.py).
+name: cost
+
+# Logical CPUs that run tasks, one task each at a time. 0-11 are the 12 hardware threads of the six
+# performance cores (pairs 0/1, 2/3, ...), 12-19 the efficiency cores (lscpu -e). Three different
+# performance cores; their sibling threads get no task, so tasks do not share a core.
+cpus: [2, 6, 10]
+shuffle_seed: 0               # tasks run in a shuffled order, so no method gets systematically quieter periods
+
+memory:
+  reserve_gb: 3.0             # start a task only if MemAvailable stays above this after its estimate
+  task_gb: {default: 1.0, search: 1.5, dbim_fit: 1.5, baseline_fit: 1.5, exp_gradient: 3.0, ts_lstm: 1.5}
+
+timeouts_s:                   # a task running longer is killed and recorded as 'timeout'
+  default: 3600
+  resampler: 1800
+  search: 7200
+
+# 7.2: cost of each method and stage on full outer training folds (repeat 0, three folds), with the
+# configuration the experiments selected in that fold. Protected attributes as inputs (main convention).
+cost:
+  datasets: [adult, bank]
+  repeat: 0
+  folds: [0, 1, 2]
+  search_methods: [dbim, none, random_over, random_under, smote]
+  baselines: [none, random_over, random_under, smote, reweighing, dir, exp_gradient, threshold_opt]
+  mitigate: {adult: sex, bank: marital}        # fairness baselines: one attribute (sex for Adult)
+  generators: [marginal_sampler, independent_marginals, gaussian_copula]
+  detection: {datasets: [adult, bank, german], head_seed: 0, repeats: 3}
+  timeseries: {folds: [0, 1, 2], lstm_fold: 0, lstm_seed: 0}
+
+# 7.3: scaling. Stratified subsamples of the repeat-0 fold-0 training rows (three subsample seeds);
+# 100% = the full training rows of folds 0, 1, 2. Test rows: always the whole outer test fold.
+# Fixed configuration: the one selected in repeat 0 fold 0. If a resampler or search times out at one
+# size, its larger sizes are skipped.
+scaling:
+  datasets: [adult, bank]
+  fracs: [0.1, 0.25, 0.5]
+  sub_seeds: [0, 1, 2]
+  resamplers: [SMOTE, ADASYN, BorderlineSMOTE, KMeansSMOTE, SVMSMOTE,
+               CondensedNearestNeighbour, AllKNN, NeighbourhoodCleaningRule, OneSidedSelection, TomekLinks]
+  generators: [marginal_sampler, gaussian_copula]
+  search: true                # DBIM model selection at each size (subsample seed 0 only)

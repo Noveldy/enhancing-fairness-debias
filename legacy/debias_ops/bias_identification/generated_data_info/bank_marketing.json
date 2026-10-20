@@ -1,0 +1,51 @@
+{
+    "protected_attributes": [
+        "age",
+        "marital"
+    ],
+    "numeric_columns": [
+        "age",
+        "balance",
+        "day_of_week",
+        "duration",
+        "campaign",
+        "pdays",
+        "previous"
+    ],
+    "datetime_columns": [],
+    "object_columns": [
+        "job",
+        "marital",
+        "education",
+        "default",
+        "housing",
+        "loan",
+        "contact",
+        "month",
+        "poutcome",
+        "y"
+    ],
+    "type_of_dataset": "mixed",
+    "domain": "finance",
+    "target_variables": [
+        "y"
+    ],
+    "imbalanced_protected_attributes": [
+        {
+            "age": "extremely imbalanced",
+            "minority_class_percentage": 0.29,
+            "minority_class_index": "(79.6, 95.0]"
+        },
+        {
+            "marital": "moderately imbalanced",
+            "minority_class_percentage": 11.52,
+            "minority_class_index": "divorced"
+        }
+    ],
+    "imbalanced_target_attributes": [
+        {
+            "y": "moderately imbalanced",
+            "minority_class_percentage": 11.7
+        }
+    ]
+}

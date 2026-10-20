@@ -1,0 +1,103 @@
+experiment: proposed_approach (futureDateIndex = 0)
+dataset: DPB
+MAPE: 7.177716294985046
+SMAPE: 7.455916526548866
+MAE: 0.038523500496612705
+Learning rate: 1e-06
+Optimizer: Adam
+
+dataset: DPB
+experiment: proposed_approach (futureDateIndex = 1)
+MAPE: 7.201796175835502
+SMAPE: 7.4841265684432114
+MAE: 0.038465913779157083
+Learning rate: 1e-06
+Optimizer: Adam
+
+experiment: proposed_approach (futureDateIndex = 2)
+dataset: DPB
+MAPE: 7.201322347742088
+SMAPE: 7.4806829276142635
+MAE: 0.03847875463876585
+Learning rate: 1e-06
+Optimizer: Adam
+
+experiment: fill with zeros
+dataset: DPB
+MAPE: 8.422389770972886
+SMAPE: 8.877231730394739
+MAE: 0.03843969445023483
+Learning rate: 1e-06
+Optimizer: Adam
+
+experiment: fill with mean of column
+dataset: DPB
+MAPE: 6.838842844245582
+SMAPE: 7.039391718433797
+MAE: 0.0375607692361719
+Learning rate: 1e-06
+Optimizer: Adam
+
+experiment: drop all missing values and previous ones
+dataset: DPB
+MAPE: 5.574405292266338
+SMAPE: 5.708747737679538
+MAE: 0.032954830189226354
+Learning rate: 1e-06
+Optimizer: Adam
+
+experiment: no missing values
+dataset: Delhi (https://www.kaggle.com/datasets/sumanthvrao/daily-climate-time-series-data?resource=download)
+MAPE: 44.249759294759315
+SMAPE: 33.926570969769834
+MAE: 0.05733051098243398
+Learning rate: 1e-06
+Optimizer: Adam
+
+experiment: proposed_approach (futureDateIndex = 0)
+dataset: Delhi
+MAPE: 15.555717758389484
+SMAPE: 16.862323929937766
+MAE: 0.08344288485104513
+Learning rate: 1e-06
+Optimizer: Adam
+
+experiment: proposed_approach (futureDateIndex = 7)
+dataset: Delhi
+MAPE: 15.757039223764343
+SMAPE: 17.07151990214913
+MAE: 0.08448981392597447
+Learning rate: 1e-06
+Optimizer: Adam
+
+experiment: proposed_approach (futureDateIndex = 21)
+dataset: Delhi
+MAPE: 16.27522421127796
+SMAPE: 17.561088071691014
+MAE: 0.08739989330191232
+Learning rate: 1e-06
+Optimizer: Adam
+
+experiment: fill with zeros
+dataset: Delhi
+MAPE: 15.472796337135257
+SMAPE: 15.586982087729135
+MAE: 0.09271693536367615
+Learning rate: 1e-06
+Optimizer: Adam
+
+experiment: fill with mean of column
+dataset: Delhi
+MAPE: 19.744058082000535
+SMAPE: 21.422180947579623
+MAE: 0.11050907291161144
+Learning rate: 1e-06
+Optimizer: Adam
+
+experiment: drop all missing values and previous ones
+dataset: Delhi
+MAPE: 53.7451658894384
+SMAPE: 34.771412005443
+MAE: 0.14677367730902574
+Learning rate: 1e-06
+Optimizer: Adam

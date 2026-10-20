@@ -1,0 +1,54 @@
+dataset,column,description,truth,category,max_association_with_sensitive,most_associated_sensitive_column,keyword_on_name,bert_votes,bert_majority,p_checkpoint830,nearest_training_similarity,nearest_training_description,nearest_training_label
+adult,age,Age of the individual (years),sensitive,age,0.5643226570024032,marital-status,1,4,1,0.7196523,1.0,The age of the individual in years,Sensitive
+adult,workclass,"Employment type (e.g. Private, Self-emp-inc, Federal-gov)",not sensitive,,0.22811826019124892,age,0,0,0,0.027767414,0.42953468275839524,Employment type,Not Sensitive
+adult,fnlwgt,Census sampling weight (final weight),not sensitive,,0.1509434034459597,native-country,0,0,0,0.019647347,0.7744555397783455,final weight,Not Sensitive
+adult,education,Highest education level attained,not sensitive,,0.22137499563819238,age,0,0,0,0.03671374,0.5673552464174028,Education level,Not Sensitive
+adult,education-num,Highest education level as an ordinal number,not sensitive,,0.28518110922141715,native-country,0,0,0,0.14597929,0.5145649407503489,Education level,Not Sensitive
+adult,marital-status,Marital status,sensitive,marital status,0.5643226570024032,age,0,5,1,0.9284686,1.0,marital status,Sensitive
+adult,occupation,Occupation,not sensitive,,0.43572982830276896,sex,0,4,1,0.28135064,1.0,Occupation,Not Sensitive
+adult,relationship,"Relationship to the household head (e.g. Husband, Wife, Own-child)",proxy,,0.6487043848262715,sex,0,0,0,0.21650746,0.31741734038564146,relationship status,Sensitive
+adult,race,Race of the individual,sensitive,race,0.4170519879483967,native-country,1,0,0,0.10070202,0.7764690230804538,race,Sensitive
+adult,sex,"Sex of the individual (Female, Male)",sensitive,sex,0.4649752258554875,marital-status,1,5,1,0.9921991,0.817624157867909,"Sex of the character (e.g. Male, Female, etc.)",Sensitive
+adult,capital-gain,Capital gains (USD),not sensitive,,0.12116083541514257,age,0,0,0,0.00025123422,0.35372350310861544,Capital crime rate by town,Not Sensitive
+adult,capital-loss,Capital losses (USD),not sensitive,,0.07804690513681,marital-status,0,0,0,0.0033898249,0.35372350310861544,Capital crime rate by town,Not Sensitive
+adult,hours-per-week,Hours worked per week,not sensitive,,0.25525402821711246,marital-status,0,0,0,0.009709943,0.24432822833540319,Heavy drinkers (adult men having more than 14 drinks per week and adult women having more than 7 drinks per week) 0 = no 1 = yes,Not Sensitive
+adult,native-country,Country of origin,sensitive,nationality,0.4170519879483967,race,0,0,0,0.14305554,0.4312125448102597,Country where the startup is based,Not Sensitive
+adult,income,Whether annual income exceeds 50K USD,not sensitive,,0.44881353777439664,marital-status,0,0,0,0.023748517,0.5712750445481505,Annual income,Not Sensitive
+bank,age,Age of the client (years),sensitive,age,0.4317288748296543,marital,1,0,0,0.10989778,0.742223511642973,Age (years),Sensitive
+bank,job,"Type of job (e.g. admin., blue-collar, management, student)",not sensitive,,0.4953792137575081,age,0,0,0,0.024443788,0.4477429308455615,type of job,Not Sensitive
+bank,marital,"Marital status (married, single, divorced; divorced includes widowed)",sensitive,marital status,0.4317288748296543,age,0,5,1,0.8735654,0.7723688704727908,"The marital status of the student (e.g., single, married, divorced).",Sensitive
+bank,education,"Education level (primary, secondary, tertiary)",not sensitive,,0.21002073290631604,age,0,0,0,0.014524382,0.4768112822958187,Education level,Not Sensitive
+bank,default,Whether the client has credit in default,not sensitive,,0.018720846504216255,marital,0,0,0,0.0065589463,0.4283843947933577,Client number,Not Sensitive
+bank,balance,Average yearly balance (euros),not sensitive,,0.09329009124691115,age,0,0,0,3.780227e-05,0.26428941570877673,Their average Salaries,Not Sensitive
+bank,housing,Whether the client has a housing loan,not sensitive,,0.18515226049770064,age,0,0,0,0.057013467,0.44149347259126076,Client number,Not Sensitive
+bank,loan,Whether the client has a personal loan,not sensitive,,0.05260431387091487,marital,0,0,0,0.010473978,0.4477727343617529,Client number,Not Sensitive
+bank,contact,"Contact communication type (cellular, telephone, unknown)",not sensitive,,0.16242937179038236,age,0,0,0,0.020840142,0.23627320317364536,Consideration of a partner's communication skills on a scale of 1 to 5.,Not Sensitive
+bank,day,Last contact day of the month,not sensitive,,0.008506402590369088,age,0,0,0,0.0083727455,0.23852748263782134,"month and year of the character's first appearance in a comic book, if available",Not Sensitive
+bank,month,Last contact month of the year,not sensitive,,0.15904732067215538,age,0,0,0,0.018299263,0.4052726729609567,"month and year of the character's first appearance in a comic book, if available",Not Sensitive
+bank,duration,Last contact duration in seconds (known only after the call; see data/README.md),not sensitive,,0.03358400810248634,age,0,0,0,6.368177e-05,0.1323908750335535,Has reduced contact with people outside of own household.,Not Sensitive
+bank,campaign,Number of contacts performed during this campaign for this client,not sensitive,,0.03657499141459712,age,0,0,0,0.006046427,0.5140197749381196,Client number,Not Sensitive
+bank,pdays,Days since the client was last contacted in a previous campaign (-1 = not previously contacted),not sensitive,,0.02978302232923331,marital,0,0,0,0.0003722283,0.22750658277229793,Client number,Not Sensitive
+bank,previous,Number of contacts performed before this campaign for this client,not sensitive,,0.016915758712787023,marital,0,0,0,0.008490428,0.5140197749381196,Client number,Not Sensitive
+bank,poutcome,"Outcome of the previous marketing campaign (failure, other, success, unknown)",not sensitive,,0.03818183943744254,age,0,0,0,0.00923385,0.2041576284347366,F - Female M - Male X - Unknown,Sensitive
+bank,y,Whether the client subscribed to a term deposit,not sensitive,,0.06659932751607199,marital,0,0,0,0.009032956,0.33503946313553234,Client number,Not Sensitive
+german,status_of_existing_checking_account,Status of existing checking account,not sensitive,,0.09073049906954248,age_in_years,0,0,0,0.009522805,0.24122790821523662,Whether the applicant is an existing customer of the finance company.,Not Sensitive
+german,duration_in_month,Duration in month,not sensitive,,0.13819628529347436,foreign_worker,0,0,0,0.002920356,0.2644877624369259,"month and year of the character's first appearance in a comic book, if available",Not Sensitive
+german,credit_history,Credit history,not sensitive,,0.17683603954176325,age_in_years,0,0,0,0.02043974,0.6362210966330961,Credit history meets guidelines,Not Sensitive
+german,purpose,Purpose,not sensitive,,0.17176473571018272,age_in_years,0,1,0,0.35860655,0.0,Capital crime rate by town,Not Sensitive
+german,credit_amount,Credit amount,not sensitive,,0.18701357670396546,personal_status_and_sex,0,0,0,0.0013669755,0.5440804116748276,Represents the number of months since the applicant's first credit line. Indicates the applicant's experience with credit management.,Not Sensitive
+german,savings_account_bonds,Savings account/bonds,not sensitive,,0.11260291075028121,age_in_years,0,0,0,0.00014322967,0.0,Capital crime rate by town,Not Sensitive
+german,present_employment_since,Present employment since,not sensitive,,0.40960706262486135,age_in_years,0,0,0,0.11914942,0.45622640410497384,Employment type,Not Sensitive
+german,installment_rate_in_percentage_of_disposable_income,Installment rate in percentage of disposable income,not sensitive,,0.14303313305730506,personal_status_and_sex,1,0,0,0.002521652,0.31552723468848143,Income level of the respondent (0 indicating no income).,Not Sensitive
+german,personal_status_and_sex,Personal status and sex,sensitive,sex / marital status,0.2458087331178461,age_in_years,1,1,0,0.5945828,0.39956103808862387,Would you pay for sex?,Sensitive
+german,other_debtors_guarantors,Other debtors / guarantors,not sensitive,,0.12049175346329698,foreign_worker,0,0,0,0.09036472,0.0,Capital crime rate by town,Not Sensitive
+german,present_residence_since,Present residence since,not sensitive,,0.23470863707548936,age_in_years,0,0,0,0.058007576,0.309262147392374,"Department of residence (Lima, Junín, etc.)",Not Sensitive
+german,property,Property,not sensitive,,0.224743305882774,age_in_years,0,0,0,0.14326975,1.0,Is there a property,Not Sensitive
+german,age_in_years,Age in years,sensitive,age,0.2458087331178461,personal_status_and_sex,1,4,1,0.6416422,1.0000000000000002,Age (years),Sensitive
+german,other_installment_plans,Other installment plans,not sensitive,,0.058556229218933345,personal_status_and_sex,0,0,0,0.019411871,0.2104673028947222,"Have any kind of health care coverage, including health insurance, prepaid plans such as HMO, etc. 0 = no 1 = yes",Not Sensitive
+german,housing,Housing,not sensitive,,0.30700163050462176,age_in_years,0,0,0,0.031886294,0.6270298474143019,Housing situation of respondent.,Not Sensitive
+german,number_of_existing_credits_at_this_bank,Number of existing credits at this bank,not sensitive,,0.14128661264538273,age_in_years,0,0,0,0.0012081987,0.24023376681934547,Whether the applicant is an existing customer of the finance company.,Not Sensitive
+german,job,Job,not sensitive,,0.1644764704191879,age_in_years,0,0,0,0.01762899,0.7460836890749466,type of job,Not Sensitive
+german,number_of_people_being_liable_to_provide_maintenance_for,Number of people being liable to provide maintenance for,not sensitive,,0.28425046880568994,personal_status_and_sex,0,0,0,0.0087453835,0.3082272205526082,Black people,Sensitive
+german,telephone,Telephone,not sensitive,,0.14525870068397012,age_in_years,0,0,0,0.011097762,0.0,Capital crime rate by town,Not Sensitive
+german,foreign_worker,foreign worker,sensitive,nationality,0.06819362091662788,personal_status_and_sex,0,1,0,0.12859085,0.4948156617364212,Is a healthcare worker.,Not Sensitive
+german,credit_risk,"Credit risk (1 = good, 2 = bad)",not sensitive,,0.1121910355475716,age_in_years,0,0,0,0.00027731087,0.5239665262465163,"character is Good, Bad or Neutral",Not Sensitive

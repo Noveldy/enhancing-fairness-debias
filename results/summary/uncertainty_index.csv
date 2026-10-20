@@ -1,0 +1,10 @@
+table,content,replication,ci_method
+baselines_summary.csv,"DBIM and 8 baselines, utility and fairness",25 outer folds (5 seeds x 5 folds),Nadeau-Bengio corrected t
+fairness_utility_summary.csv,"all methods incl. trivial predictors, utility, calibration, gaps",25 outer folds (5 seeds x 5 folds),Nadeau-Bengio corrected t
+ablation_summary.csv,3-stage ablation,25 outer folds (5 seeds x 5 folds),Nadeau-Bengio corrected t
+synthetic_utility.csv,TSTR / TRTR / TSTS,25 outer folds (5 seeds x 5 folds),Nadeau-Bengio corrected t
+uncertainty_ci.csv,synthetic fidelity and privacy; per-group rates,25 outer folds (5 seeds x 5 folds),Nadeau-Bengio corrected t
+uncertainty_ci.csv,detector internal CV,15 grouped folds (3 x 5) / 5 random folds,Nadeau-Bengio corrected t
+uncertainty_ci.csv,Air Quality forecasts and gap reconstruction,3 folds x 5 seeds,t over 3 fold means (primary); t over 15 runs (optimistic)
+detector_external.csv,detector on 52 external columns,5 seeds (one column set),none: fixed column set; per-seed values shown
+*_tests.csv,paired comparisons,paired folds,"Nadeau-Bengio t + Wilcoxon, Holm-adjusted"

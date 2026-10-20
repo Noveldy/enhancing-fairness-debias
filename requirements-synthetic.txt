@@ -1,0 +1,5 @@
+# Phase 5: needed to import the original FSDG generator module (bias_mitigation/synthetic_data).
+# Installed into venv/ with every existing package held at its version (pip -c).
+plotly==5.24.1
+rstr==3.2.2
+tenacity==9.2.1

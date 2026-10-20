@@ -1,0 +1,31 @@
+# Phase 6: sensitive-attribute detector validation (revision Phase 6). Run with:
+#   HF_HUB_OFFLINE=1 venv/bin/python scripts/detector_validation.py --config configs/detector.yaml
+name: detector
+training_data: bias_identification/sensitive_features_dataset.csv
+paraphrase_distance_threshold: 0.7     # average-linkage TF-IDF cosine distance (experiments/detector.py)
+bert:                                  # original hyperparameters (Models/sensitive_features_text_classifier.py)
+  lr: 2.0e-4
+  batch_size: 8
+  epochs: 10
+  threads: 8
+internal_cv:
+  grouped: {n_splits: 5, repeats: [0, 1, 2]}   # StratifiedGroupKFold over paraphrase groups
+  random: {n_splits: 5, repeats: [0]}          # plain StratifiedKFold, as the original random split
+  validation_fraction_splits: 5                # inner split of each training fold: 1 of 5 (grouped) for epoch choice
+final_models:
+  seeds: [0, 1, 2, 3, 4]                       # trained on all descriptions, epoch chosen on 1/7 grouped validation
+  validation_splits: 7
+legacy_checkpoint: bert-sensitive-features-classifier/checkpoint-830
+threshold: 0.5                                 # argmax of two classes, as in the app
+
+# Ground truth (author decision L1): sensitive = attributes in the detector's own legal list
+# (race, colour, religion, sex/gender, marital status, medical condition, military status,
+# nationality/ancestry, disability, age). Categories map columns to those classes.
+external:
+  adult:
+    sensitive: {age: age, race: race, sex: sex, marital-status: marital status, native-country: nationality}
+  bank:
+    sensitive: {age: age, marital: marital status}
+  german:
+    sensitive: {personal_status_and_sex: sex / marital status, age_in_years: age, foreign_worker: nationality}
+proxy_threshold: 0.5    # non-sensitive column with association >= this to a sensitive column = proxy

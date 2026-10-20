@@ -1,0 +1,26 @@
+experiment,method,n_folds,distinct_configs,most_frequent_config,most_frequent_share,most_frequent_sampler_share,candidates_per_fold,median_runner_up_gap,median_candidates_within_1se,share_folds_with_tie_across_samplers,selection_metric
+adult_dbim_protected_dropped,dbim,25,9,"TomekLinks {""max_depth"": 20, ""min_samples_leaf"": 5, ""n_estimators"": 300}",0.2,0.56,96.0,0.00017912302461242646,10.0,0.88,accuracy (inner 3-fold CV)
+adult_dbim_protected_kept,dbim,25,8,"OneSidedSelection {""max_depth"": 20, ""min_samples_leaf"": 5, ""n_estimators"": 300}",0.24,0.72,96.0,0.00015354496880404245,6.0,1.0,accuracy (inner 3-fold CV)
+bank_dbim_protected_dropped,dbim,25,5,"OneSidedSelection {""max_depth"": 5, ""min_samples_leaf"": 1}",0.4,0.88,96.0,0.0,5.0,0.92,accuracy (inner 3-fold CV)
+bank_dbim_protected_kept,dbim,25,6,"OneSidedSelection {""max_depth"": 5, ""min_samples_leaf"": 20}",0.4,0.84,96.0,0.0,5.0,1.0,accuracy (inner 3-fold CV)
+bank_dbim_with_duration,dbim,25,7,"OneSidedSelection {""max_depth"": 10, ""min_samples_leaf"": 20}",0.28,0.8,96.0,2.7648750276498824e-05,5.0,0.96,accuracy (inner 3-fold CV)
+adult_impute_only_protected_dropped,cleaning only,25,5,"none {""max_depth"": 20, ""min_samples_leaf"": 5, ""n_estimators"": 300}",0.4,1.0,12.0,0.00030712137717914256,3.0,0.0,accuracy (inner 3-fold CV)
+adult_impute_only_protected_kept,cleaning only,25,6,"none {""max_depth"": null, ""min_samples_leaf"": 5, ""n_estimators"": 300}",0.28,1.0,12.0,0.0001535803383212464,4.0,0.0,accuracy (inner 3-fold CV)
+bank_impute_only_protected_dropped,cleaning only,25,3,"none {""max_depth"": 5, ""min_samples_leaf"": 20}",0.64,1.0,12.0,0.00013824375138249412,2.0,0.0,accuracy (inner 3-fold CV)
+bank_impute_only_protected_kept,cleaning only,25,3,"none {""max_depth"": 5, ""min_samples_leaf"": 20}",0.72,1.0,12.0,0.0001658718631294409,2.0,0.0,accuracy (inner 3-fold CV)
+adult_baselines_protected_dropped,none,25,4,"{""max_depth"": 20, ""min_samples_leaf"": 5, ""n_estimators"": 300}",0.4,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+adult_baselines_protected_dropped,random_over,25,2,"{""max_depth"": null, ""min_samples_leaf"": 1, ""n_estimators"": 300}",0.6,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+adult_baselines_protected_dropped,random_under,25,4,"{""max_depth"": null, ""min_samples_leaf"": 1, ""n_estimators"": 100}",0.44,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+adult_baselines_protected_dropped,smote,25,6,"{""max_depth"": null, ""min_samples_leaf"": 5, ""n_estimators"": 300}",0.4,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+adult_baselines_protected_kept,none,25,5,"{""max_depth"": 20, ""min_samples_leaf"": 5, ""n_estimators"": 300}",0.32,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+adult_baselines_protected_kept,random_over,25,2,"{""max_depth"": null, ""min_samples_leaf"": 1, ""n_estimators"": 300}",0.76,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+adult_baselines_protected_kept,random_under,25,2,"{""max_depth"": null, ""min_samples_leaf"": 1, ""n_estimators"": 100}",0.84,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+adult_baselines_protected_kept,smote,25,6,"{""max_depth"": 20, ""min_samples_leaf"": 1, ""n_estimators"": 300}",0.4,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+bank_baselines_protected_dropped,none,25,4,"{""max_depth"": 5, ""min_samples_leaf"": 20}",0.52,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+bank_baselines_protected_dropped,random_over,25,3,"{""max_depth"": null, ""min_samples_leaf"": 1}",0.76,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+bank_baselines_protected_dropped,random_under,25,5,"{""max_depth"": 5, ""min_samples_leaf"": 1}",0.32,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+bank_baselines_protected_dropped,smote,25,5,"{""max_depth"": 20, ""min_samples_leaf"": 20}",0.64,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+bank_baselines_protected_kept,none,25,4,"{""max_depth"": 5, ""min_samples_leaf"": 20}",0.48,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+bank_baselines_protected_kept,random_over,25,2,"{""max_depth"": null, ""min_samples_leaf"": 1}",0.96,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+bank_baselines_protected_kept,random_under,25,6,"{""max_depth"": 5, ""min_samples_leaf"": 1}",0.4,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored
+bank_baselines_protected_kept,smote,25,4,"{""max_depth"": 20, ""min_samples_leaf"": 20}",0.48,,,,,,accuracy (inner 3-fold CV); inner scores of runners-up not stored

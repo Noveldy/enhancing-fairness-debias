@@ -1,0 +1,31 @@
+{
+  "script": "scripts/synthetic_summary.py",
+  "finished_utc": "2026-10-20T08:02:44+00:00",
+  "git_commit": "9efcd6d3897988a92c3295d189de6346ae0c560b",
+  "git_dirty": false,
+  "inputs": {
+    "results/raw/synthetic/run_adult_synthetic.json": "10008b6856e51d3d3c883f9fe5f8532e6b4e204b830b40109f0e59adb8724502",
+    "results/raw/synthetic/adult_synthetic/tstr_fold_metrics.csv": "b93006ff5f1539d29b334dae4eb0c4b4f2b08a71b59f04373e15fbc42874670f",
+    "results/raw/synthetic/adult_synthetic/tsts_fold_metrics.csv": "9318cfe4044040940e48bb1f6d676bd9bf33721417bd217e5e37e331524dcd6a",
+    "results/raw/synthetic/adult_synthetic/fidelity.csv": "e9ca036e089194d0b8f54b8b642d682b9a41c1ade650e51071a34a70d546611e",
+    "results/raw/synthetic/adult_synthetic/fidelity_columns.csv": "4cb66e94d4e11eb31963a357484f51c6db968272cafa1b5dce02894bc0e34106",
+    "results/raw/synthetic/adult_synthetic/fidelity_subgroups.csv": "4735bb11bcb83688ea9c2d937a3eadd9dafe1ced9721a440e437c51c85b93166",
+    "results/raw/synthetic/adult_synthetic/privacy.csv": "44ffff3a1fb0d82c34453cc51033907bb2ba1e97a598f1c04e49e6aef084db16",
+    "results/raw/synthetic/adult_synthetic/tstr_group_rates.csv": "89ba198358a298d5707ed19f9c53bd1109389d0fa16e984aa43e4355f112c8d2",
+    "results/raw/synthetic/run_bank_synthetic.json": "fc07f864028c7829fd766d0a6d3f9bbe6635fd6bed33811cfbafc065ee112127",
+    "results/raw/synthetic/bank_synthetic/tstr_fold_metrics.csv": "c51340d2451d24a452b811b605b45c1d55b1a028209383ca4230eb43f7012b69",
+    "results/raw/synthetic/bank_synthetic/tsts_fold_metrics.csv": "a2808ad21fcf3ff7eaa0e6a7fd853f2f19f20f4c14243572dbdaf980fe508041",
+    "results/raw/synthetic/bank_synthetic/fidelity.csv": "e7ab0bd4a113e85bacd12b819507cb215ff4dc30bb1c67ccfeb9a86e9336bc41",
+    "results/raw/synthetic/bank_synthetic/fidelity_columns.csv": "4e7141f91667765247c9df58276930d683e2f65f571e8f996ffd9a08d45548a4",
+    "results/raw/synthetic/bank_synthetic/fidelity_subgroups.csv": "993dfa770a6aa73fe25e7541c0e24deba33c736afb2516c002aa8fecec238308",
+    "results/raw/synthetic/bank_synthetic/privacy.csv": "73a0bf7e8cb2d58183e20fef53e71e966ac48912c9389e7c098faf4b2424132b",
+    "results/raw/synthetic/bank_synthetic/tstr_group_rates.csv": "d0b60b793d8fe1bdfbc1baeaf121d4315119977c49b50a07166e6901f7a55299"
+  },
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "matplotlib": "3.11.2"
+  }
+}

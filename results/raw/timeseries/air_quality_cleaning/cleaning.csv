@@ -1,0 +1,16 @@
+fold,scenario,method,seconds,cells_filled
+0,reference,linear,0.0083,7259
+0,mean,mean,0.0029,21604
+0,linear,linear,0.0037,21604
+0,spline,spline,31.1403,21604
+0,proposed,proposed,0.3454,21604
+1,reference,linear,0.0074,7466
+1,mean,mean,0.0015,21811
+1,linear,linear,0.0035,21811
+1,spline,spline,24.0518,21811
+1,proposed,proposed,0.319,21811
+2,reference,linear,0.006,8219
+2,mean,mean,0.0018,22564
+2,linear,linear,0.0032,22564
+2,spline,spline,21.1285,22564
+2,proposed,proposed,0.2799,22564

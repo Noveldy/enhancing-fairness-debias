@@ -1,0 +1,84 @@
+# Main evaluation protocol (revision Phase 2). Run with:
+#   venv/bin/python run_experiments.py --config configs/main.yaml
+name: main
+search_space: configs/search_space.yaml
+
+# Repeated stratified cross-validation: repeat r uses seed seeds[r].
+outer:
+  n_repeats: 5
+  n_splits: 5
+seeds: [0, 1, 2, 3, 4]
+inner:
+  n_splits: 3
+n_jobs: 18            # upper limit on parallel inner-CV fits; the memory guard may lower it
+
+# Memory safeguard (experiments/memory_guard.py). Per-worker estimate measured with
+# scripts/profile_memory.py on an Adult inner fold: largest step = random forest,
+# 300 unpruned trees, ~0.8 GB peak (results/diagnostics/). n_jobs is capped so
+# n_jobs * per_worker_gb + main_gb fits in free memory minus reserve_gb; the run
+# stops with MemoryBudgetExceeded if it uses more than budget_gb (default: free
+# memory at start minus reserve) or free memory falls below reserve_gb.
+memory:
+  per_worker_gb: 1.0
+  main_gb: 2.0
+  reserve_gb: 2.0
+  budget_gb: null
+
+tabular_experiments:
+  # Proposed pipeline (DBIM), protected attributes used as model inputs (as in the paper).
+  - name: adult_dbim_protected_kept
+    dataset: adult
+    variant: full                 # true missing values -> SimilarityImputer (fitted per fold)
+    method: dbim
+    classifier: random_forest
+    domain: finance
+    protected: [sex, race]        # evaluated for fairness
+    stratify_by: sex              # outer/inner folds stratified by target x this attribute
+    protected_as_feature: true
+    drop_features: []
+
+  # Same, protected attributes removed from the model inputs (author decision C6: report both).
+  - name: adult_dbim_protected_dropped
+    dataset: adult
+    variant: full
+    method: dbim
+    classifier: random_forest
+    domain: finance
+    protected: [sex, race]
+    stratify_by: sex
+    protected_as_feature: false
+    drop_features: []
+
+  - name: bank_dbim_protected_kept
+    dataset: bank
+    variant: full
+    method: dbim
+    classifier: decision_tree
+    domain: finance
+    protected: [marital]
+    stratify_by: marital
+    protected_as_feature: true
+    drop_features: [duration]     # author decision F1 (a)
+
+  - name: bank_dbim_protected_dropped
+    dataset: bank
+    variant: full
+    method: dbim
+    classifier: decision_tree
+    domain: finance
+    protected: [marital]
+    stratify_by: marital
+    protected_as_feature: false
+    drop_features: [duration]
+
+  # Comparison only: 'duration' kept as in the original experiments (F1 (a)).
+  - name: bank_dbim_with_duration
+    dataset: bank
+    variant: full
+    method: dbim
+    classifier: decision_tree
+    domain: finance
+    protected: [marital]
+    stratify_by: marital
+    protected_as_feature: true
+    drop_features: []

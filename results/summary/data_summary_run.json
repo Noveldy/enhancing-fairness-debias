@@ -1,0 +1,30 @@
+{
+  "script": "scripts/make_data_summary.py",
+  "run_at_utc": "2026-10-18T11:12:40+00:00",
+  "git_commit": "20f4fa3bcc80a8286341ac9c4838609587508faf",
+  "git_dirty": false,
+  "python": "3.12.3",
+  "numpy": "2.4.6",
+  "pandas": "3.0.5",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "seeds": "none (deterministic, no randomness)",
+  "raw_files": {
+    "adult": {
+      "file": "adult.csv",
+      "sha256": "7bf09a7484d84f92c7e69582078bb01b2f7c4862c8fb27990c0dd848a8a029f4"
+    },
+    "bank": {
+      "file": "bank_marketing.csv",
+      "sha256": "592cda3d5f6b704f0ce23477e8375acf2301460efe76cd192e2a789325ccdc13"
+    },
+    "air_quality": {
+      "file": "air_quality.csv",
+      "sha256": "d8196847f231fc141ba16c1376aeb90d747a95353203e20ca3b4ae135438157d"
+    }
+  },
+  "wall_clock_seconds": 0.54,
+  "outputs": [
+    "results/summary/data_summary.csv",
+    "results/summary/data_missingness.csv"
+  ]
+}

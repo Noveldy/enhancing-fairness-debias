@@ -1,0 +1,84 @@
+# Phase 3 baselines (revision Phase 3.1-3.2). Run with:
+#   venv/bin/python run_experiments.py --config configs/baselines.yaml
+# Same outer folds, seeds, inner CV and search space as configs/main.yaml, so
+# every baseline fold pairs with the DBIM fold of the same repeat and fold.
+name: baselines
+search_space: configs/search_space.yaml
+outer:
+  n_repeats: 5
+  n_splits: 5
+seeds: [0, 1, 2, 3, 4]
+inner:
+  n_splits: 3
+n_jobs: 18            # upper limit on outer folds run in parallel; the memory guard may lower it
+
+# Memory safeguard (experiments/memory_guard.py). One worker runs one outer fold:
+# inner searches (one RF at a time, ~0.8 GB peak with SMOTE) plus the cheap
+# fairness methods. ExponentiatedGradient runs one fold at a time (stage 2).
+memory:
+  per_worker_gb: 1.2
+  main_gb: 2.0
+  reserve_gb: 2.0
+  budget_gb: null
+
+baselines:
+  constraint: demographic_parity   # ThresholdOptimizer and ExponentiatedGradient (original scripts: DP)
+  eg_eps: 0.01                     # fairlearn defaults
+  eg_max_iter: 50
+  eg_classifier_threads: 6         # RF threads inside ExponentiatedGradient (results do not depend on it)
+  dir_repair_level: 1.0            # as in the original aif360 scripts
+
+_methods: &methods [none, random_over, random_under, smote, reweighing, dir, exp_gradient, threshold_opt]
+
+baseline_experiments:
+  - name: adult_baselines_protected_kept
+    dataset: adult
+    variant: full                 # splits on all rows; baselines train and test on complete rows (B2)
+    classifier: random_forest
+    domain: finance
+    protected: [sex, race]
+    stratify_by: sex
+    protected_as_feature: true
+    drop_features: []
+    mitigate: [sex, race]         # one attribute per fairness-method run, as in the original Table 25
+    methods: *methods
+    compare_with: main/adult_dbim_protected_kept
+
+  - name: adult_baselines_protected_dropped
+    dataset: adult
+    variant: full
+    classifier: random_forest
+    domain: finance
+    protected: [sex, race]
+    stratify_by: sex
+    protected_as_feature: false
+    drop_features: []
+    mitigate: [sex, race]
+    methods: *methods
+    compare_with: main/adult_dbim_protected_dropped
+
+  - name: bank_baselines_protected_kept
+    dataset: bank
+    variant: full
+    classifier: decision_tree
+    domain: finance
+    protected: [marital]
+    stratify_by: marital
+    protected_as_feature: true
+    drop_features: [duration]     # F1 (a)
+    mitigate: [marital]
+    methods: *methods
+    compare_with: main/bank_dbim_protected_kept
+
+  - name: bank_baselines_protected_dropped
+    dataset: bank
+    variant: full
+    classifier: decision_tree
+    domain: finance
+    protected: [marital]
+    stratify_by: marital
+    protected_as_feature: false
+    drop_features: [duration]
+    mitigate: [marital]
+    methods: *methods
+    compare_with: main/bank_dbim_protected_dropped

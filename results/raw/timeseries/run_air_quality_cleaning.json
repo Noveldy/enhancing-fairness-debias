@@ -1,0 +1,150 @@
+{
+  "experiment": {
+    "name": "air_quality_cleaning",
+    "dataset": "air_quality",
+    "artificial_gap": {
+      "start": "2004-11-08 00:00",
+      "end": "2005-01-01 00:00"
+    },
+    "reference_fill": "linear",
+    "methods": [
+      "mean",
+      "linear",
+      "spline",
+      "proposed"
+    ],
+    "method_params": {
+      "proposed": {
+        "max_passes": 3,
+        "standardize": false
+      }
+    },
+    "horizons": [
+      1,
+      12
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "folds": [
+      {
+        "train_end": "2005-01-09 23:00",
+        "val_end": "2005-01-23 23:00",
+        "test_end": "2005-02-20 23:00"
+      },
+      {
+        "train_end": "2005-02-06 23:00",
+        "val_end": "2005-02-20 23:00",
+        "test_end": "2005-03-20 23:00"
+      },
+      {
+        "train_end": "2005-03-06 23:00",
+        "val_end": "2005-03-20 23:00",
+        "test_end": "2005-04-04 14:00"
+      }
+    ]
+  },
+  "config_file": "configs/timeseries.yaml",
+  "config": {
+    "name": "timeseries",
+    "search_space": "configs/search_space_timeseries.yaml",
+    "memory": {
+      "per_worker_gb": 1.0,
+      "main_gb": 2.0,
+      "reserve_gb": 2.0,
+      "budget_gb": null
+    }
+  },
+  "search_space": {
+    "lstm": {
+      "selection_seed": 0,
+      "grid": {
+        "lr": [
+          1e-06,
+          0.0001,
+          0.001
+        ],
+        "input_chunk_length": [
+          7,
+          24
+        ]
+      },
+      "training": {
+        "max_epochs": 100,
+        "patience": 5,
+        "min_delta": 0.0,
+        "batch_size": 32,
+        "hidden_dim": 25,
+        "training_length": 24,
+        "torch_threads": 4
+      }
+    }
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "data": {
+    "air_quality": {
+      "file": "air_quality.csv",
+      "sha256": "d8196847f231fc141ba16c1376aeb90d747a95353203e20ca3b4ae135438157d"
+    }
+  },
+  "started_utc": "2026-10-18T12:41:02+00:00",
+  "finished_utc": "2026-10-18T16:19:34+00:00",
+  "wall_clock_seconds": 13112.5,
+  "summary": {
+    "experiment": "air_quality_cleaning",
+    "wall_clock_seconds": 13109.5,
+    "n_rows": 9357,
+    "columns": [
+      "CO(GT)",
+      "PT08.S1(CO)",
+      "C6H6(GT)",
+      "PT08.S2(NMHC)",
+      "NOx(GT)",
+      "PT08.S3(NOx)",
+      "NO2(GT)",
+      "PT08.S4(NO2)",
+      "PT08.S5(O3)",
+      "T",
+      "RH",
+      "AH"
+    ],
+    "memory_guard": {
+      "per_worker_gb": 1.0,
+      "main_gb": 2.0,
+      "reserve_gb": 2.0,
+      "budget_gb": 6.6
+    },
+    "peak_memory_gb": 0.63
+  },
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.5",
+      "scipy": "1.18.0",
+      "scikit-learn": "1.9.0",
+      "imbalanced-learn": "0.14.2",
+      "joblib": "1.5.3",
+      "pyyaml": "6.0.3",
+      "torch": "2.13.0+cpu",
+      "darts": "0.46.1",
+      "pytorch-lightning": "2.6.5"
+    },
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+    "cpu": "Intel(R) Core(TM) i5-14500",
+    "logical_cpus": 20,
+    "ram_gb": 14.6,
+    "git_commit": "5b7226ba48b46ed068c039021c551ecebddc914b",
+    "git_dirty": false
+  }
+}

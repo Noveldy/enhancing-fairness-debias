@@ -1,0 +1,15 @@
+{
+  "title": "Enhancing Fairness: a cross-platform toolkit for identifying and mitigating data bias (back end and revised evaluation)",
+  "upload_type": "software",
+  "version": "revision-1",
+  "license": "MIT",
+  "description": "Back end of the DEBIAS toolkit and the complete, reproducible evaluation behind the revised manuscript 'Enhancing Fairness: A Cross-Platform Application for Mitigating Bias in Data Ecosystems' (Array, ARRAY-D-26-05264): code, pinned environment, configurations, seeds, datasets with checksums, raw and summary outputs, and scripts that regenerate every table and figure. See README.md and REVISION_LOG.md.",
+  "creators": [
+    {"name": "Mavrogiorgos, Konstantinos", "affiliation": "University of Piraeus", "orcid": "0009-0006-5534-2683"},
+    {"name": "Kiourtis, Athanasios", "affiliation": "Harokopio University of Athens", "orcid": "0000-0002-1681-3626"},
+    {"name": "Mavrogiorgou, Argyro", "affiliation": "University of Piraeus", "orcid": "0000-0002-1543-5627"},
+    {"name": "Kyriazis, Dimosthenis", "affiliation": "University of Piraeus", "orcid": "0000-0001-7019-7214"}
+  ],
+  "keywords": ["fairness", "data bias", "resampling", "synthetic data", "sensitive attributes"],
+  "grants": [{"id": "10.13039/501100000780::101249596"}, {"id": "10.13039/501100000780::101135209"}]
+}

@@ -1,0 +1,817 @@
+text,label,y,group
+Capital crime rate by town,Not Sensitive,0,23
+"Proportion of residential land zoned for lots over 25,000 sq. ft.",Not Sensitive,0,251
+Proportion of non-retail business acres per town,Not Sensitive,0,15
+Charles River dummy variable (= 1 if tract bounds river; 0 otherwise),Not Sensitive,0,281
+Nitric oxides concentration (parts per 10 million),Not Sensitive,0,212
+Average number of rooms per dwelling,Not Sensitive,0,33
+Proportion of owner-occupied units built prior to 1940,Not Sensitive,0,293
+Weighted distances to five Boston employment centres,Not Sensitive,0,236
+Accessibility to radial highways,Not Sensitive,0,167
+"Full-value property-tax rate per $10,000",Not Sensitive,0,66
+Pupil-teacher ratio by town,Not Sensitive,0,273
+1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town,Sensitive,1,58
+Percentage of lower status of the population,Sensitive,1,262
+proportion of Black individuals by town.,Sensitive,1,113
+proportion of White individuals by city.,Sensitive,1,64
+proportion of Asian individuals by county.,Sensitive,1,48
+proportion of Hispanic individuals by region.,Sensitive,1,64
+proportion of males by district.,Sensitive,1,138
+proportion of females by neighborhood.,Sensitive,1,64
+proportion of Black males by state.,Sensitive,1,138
+proportion of White females by city.,Sensitive,1,64
+proportion of Asian females by region.,Sensitive,1,64
+proportion of Black females by town.,Sensitive,1,113
+proportion of White males by county.,Sensitive,1,48
+proportion of Hispanic males by district.,Sensitive,1,138
+proportion of Black individuals by zip code.,Sensitive,1,157
+proportion of Hispanic individuals by area.,Sensitive,1,64
+proportion of Asian individuals by neighborhood.,Sensitive,1,64
+proportion of males by county.,Sensitive,1,48
+proportion of females by state.,Sensitive,1,138
+proportion of Black females by district.,Sensitive,1,138
+proportion of White females by region.,Sensitive,1,64
+Percentage of Black residents,Sensitive,1,120
+Black population distribution,Sensitive,1,17
+Ratio of Black individuals,Sensitive,1,95
+Black demographic share,Sensitive,1,44
+Black resident concentration,Sensitive,1,82
+Proportion of Black citizens,Sensitive,1,122
+Black community presence,Sensitive,1,196
+Percentage of Black inhabitants,Sensitive,1,73
+Distribution of Black people,Sensitive,1,43
+Black population breakdown,Sensitive,1,17
+Percentage of White residents,Sensitive,1,120
+White population distribution,Sensitive,1,17
+Ratio of White individuals,Sensitive,1,95
+White demographic share,Sensitive,1,44
+White resident concentration,Sensitive,1,82
+Proportion of White citizens,Sensitive,1,122
+White community presence,Sensitive,1,196
+Percentage of White inhabitants,Sensitive,1,73
+Distribution of White people,Sensitive,1,43
+White population breakdown,Sensitive,1,17
+Percentage of Hispanic residents,Sensitive,1,120
+Hispanic population distribution,Sensitive,1,17
+Ratio of Hispanic individuals,Sensitive,1,95
+Hispanic demographic share,Sensitive,1,44
+Hispanic resident concentration,Sensitive,1,82
+Proportion of Hispanic citizens,Sensitive,1,122
+Hispanic community presence,Sensitive,1,196
+Percentage of Hispanic inhabitants,Sensitive,1,73
+Distribution of Hispanic people,Sensitive,1,43
+Hispanic population breakdown,Sensitive,1,17
+Percentage of Asian residents,Sensitive,1,120
+Asian population distribution,Sensitive,1,17
+Ratio of Asian individuals,Sensitive,1,95
+Asian demographic share,Sensitive,1,44
+Asian resident concentration,Sensitive,1,82
+Proportion of Asian citizens,Sensitive,1,122
+Asian community presence,Sensitive,1,196
+Percentage of Asian inhabitants,Sensitive,1,73
+Distribution of Asian people,Sensitive,1,43
+Asian population breakdown,Sensitive,1,17
+Percentage of Indigenous residents,Sensitive,1,120
+Indigenous population distribution,Sensitive,1,17
+Ratio of Indigenous individuals,Sensitive,1,95
+Indigenous demographic share,Sensitive,1,44
+Indigenous resident concentration,Sensitive,1,82
+Proportion of Indigenous citizens,Sensitive,1,122
+Indigenous community presence,Sensitive,1,196
+Percentage of Indigenous inhabitants,Sensitive,1,73
+Distribution of Indigenous people,Sensitive,1,43
+Indigenous population breakdown,Sensitive,1,17
+Percentage of Middle Eastern residents,Sensitive,1,70
+Middle Eastern population distribution,Sensitive,1,70
+Ratio of Middle Eastern individuals,Sensitive,1,95
+Middle Eastern demographic share,Sensitive,1,44
+Middle Eastern resident concentration,Sensitive,1,82
+Proportion of Middle Eastern citizens,Sensitive,1,122
+Middle Eastern community presence,Sensitive,1,70
+Percentage of Middle Eastern inhabitants,Sensitive,1,70
+Distribution of Middle Eastern people,Sensitive,1,70
+Middle Eastern population breakdown,Sensitive,1,70
+Percentage of Pacific Islander residents,Sensitive,1,63
+Pacific Islander population distribution,Sensitive,1,63
+Ratio of Pacific Islander individuals,Sensitive,1,63
+Pacific Islander demographic share,Sensitive,1,44
+Pacific Islander resident concentration,Sensitive,1,82
+Proportion of Pacific Islander citizens,Sensitive,1,122
+Pacific Islander community presence,Sensitive,1,196
+Percentage of Pacific Islander inhabitants,Sensitive,1,63
+Distribution of Pacific Islander people,Sensitive,1,63
+Pacific Islander population breakdown,Sensitive,1,63
+Percentage of Mixed-race residents,Sensitive,1,109
+Mixed-race population distribution,Sensitive,1,109
+Ratio of Mixed-race individuals,Sensitive,1,95
+Mixed-race demographic share,Sensitive,1,44
+Mixed-race resident concentration,Sensitive,1,82
+Proportion of Mixed-race citizens,Sensitive,1,122
+Mixed-race community presence,Sensitive,1,196
+Percentage of Mixed-race inhabitants,Sensitive,1,109
+Distribution of Mixed-race people,Sensitive,1,109
+Mixed-race population breakdown,Sensitive,1,17
+Date of format YYYY-MM-DD,Not Sensitive,0,76
+Mean temperature averaged out from multiple 3 hour intervals in a day.,Not Sensitive,0,174
+Humidity value for the day (units are grams of water vapor per cubic meter volume of air).,Not Sensitive,0,299
+Wind speed measured in kmph.,Not Sensitive,0,216
+Pressure reading of weather (measure in atm),Not Sensitive,0,267
+Period for model,Not Sensitive,0,279
+Company revenue,Not Sensitive,0,8
+Company Sales,Not Sensitive,0,8
+Average cost of production,Not Sensitive,0,16
+The average number of employees in the region per year,Not Sensitive,0,33
+Quarter of the Year,Not Sensitive,0,9
+Moving Average of Median Price,Not Sensitive,0,227
+Property Type i.e. house or unit,Not Sensitive,0,66
+Number of bedrooms,Not Sensitive,0,285
+"The estimated market price of the house in USD. Range: $100,000 - $1,000,000",Not Sensitive,0,25
+The number of bedrooms in the house. Range: 1 - 6,Not Sensitive,0,285
+The number of bathrooms in the house (including half-baths). Range: 1.0 - 4.0,Not Sensitive,0,283
+The total area of the house in square feet. Range: 800 - 5000 sq ft,Not Sensitive,0,190
+The year the house was built. Range: 1900 - 2023,Not Sensitive,0,213
+The number of car parking spaces in the garage. Range: 0 - 4,Not Sensitive,0,49
+The size of the land lot in acres. Range: 0.1 - 2.0 acres,Not Sensitive,0,15
+The ZIP code where the house is located. Range: Randomly generated US ZIP codes (10000 - 99999),Not Sensitive,0,157
+The crime rate in the neighborhood (arbitrary scale). Range: 0.0 - 100.0,Not Sensitive,0,226
+A rating of nearby schools on a scale from 1 to 10. Range: 1 - 10,Not Sensitive,0,46
+Name of the startup,Not Sensitive,0,3
+"The industry sector (e.g., AI, Fintech, HealthTech, etc.)",Not Sensitive,0,197
+Number of funding rounds received by the startup,Not Sensitive,0,301
+Total investment received in USD,Not Sensitive,0,237
+Estimated company valuation in USD,Not Sensitive,0,249
+Total number of investors backing the startup,Not Sensitive,0,3
+Country where the startup is based,Not Sensitive,0,3
+Year when the startup was founded,Not Sensitive,0,3
+Annual growth rate percentage,Not Sensitive,0,221
+The title of the movie,Not Sensitive,0,111
+The time period when the movie was released,Not Sensitive,0,30
+Indicates if the movie is a remake of a previously released film (Yes/No),Not Sensitive,0,30
+Specifies if the movie is part of a franchise or cinematic universe (Yes/No),Not Sensitive,0,201
+"The primary genre of the movie (e.g., Action, Drama, Comedy, Thriller)",Not Sensitive,0,280
+Indicates whether the lead actor is making a debut (Yes/No),Not Sensitive,0,165
+Indicates if the director is making their debut (Yes/No),Not Sensitive,0,165
+Indicates if the music director is working on their first film (Yes/No),Not Sensitive,0,97
+Name of the lead actor/actress in the movie,Not Sensitive,0,240
+Name of the director of the movie,Not Sensitive,0,97
+Name of the music director/composer,Not Sensitive,0,97
+The total number of screens in which the movie was released,Not Sensitive,0,30
+The total box office revenue generated by the movie in Indian Rupees (INR),Not Sensitive,0,39
+The estimated production budget of the movie in Indian Rupees (INR),Not Sensitive,0,39
+The date on which the food was consumed (YYYY-MM-DD).,Not Sensitive,0,76
+A unique identifier for each individual in the dataset.,Not Sensitive,0,142
+"Name of the consumed food (e.g., Apple, Rice, Chicken Breast).",Not Sensitive,0,287
+"Type of food (e.g., Fruits, Vegetables, Dairy, Meat, Grains, Beverages, Snacks).",Not Sensitive,0,155
+"Energy content of the food item, measured in kilocalories.",Not Sensitive,0,210
+Protein content in grams.,Not Sensitive,0,86
+Total carbohydrates in grams.,Not Sensitive,0,86
+Total fat content in grams.,Not Sensitive,0,86
+Dietary fiber in grams.,Not Sensitive,0,263
+Total sugar content in grams.,Not Sensitive,0,86
+Sodium content in milligrams.,Not Sensitive,0,297
+Cholesterol level in milligrams.,Not Sensitive,0,101
+"The type of meal (e.g., Breakfast, Lunch, Dinner, Snack).",Not Sensitive,0,255
+"Amount of water consumed during the meal, measured in milliliters.",Not Sensitive,0,169
+0 = no diabetes 1 = prediabetes 2 = diabetes,Not Sensitive,0,92
+0 = no high BP 1 = high BP,Not Sensitive,0,271
+0 = no high cholesterol 1 = high cholesterol,Not Sensitive,0,101
+0 = no cholesterol check in 5 years 1 = yes cholesterol check in 5 years,Not Sensitive,0,101
+Body Mass Index,Not Sensitive,0,277
+Have you smoked at least 100 cigarettes in your entire life? [Note: 5 packs = 100 cigarettes] 0 = no 1 = yes,Not Sensitive,0,207
+(Ever told) you had a stroke. 0 = no 1 = yes,Not Sensitive,0,208
+coronary heart disease (CHD) or myocardial infarction (MI) 0 = no 1 = yes,Not Sensitive,0,269
+physical activity in past 30 days - not including job 0 = no 1 = yes,Not Sensitive,0,132
+Consume Fruit 1 or more times per day 0 = no 1 = yes,Not Sensitive,0,14
+Consume Vegetables 1 or more times per day 0 = no 1 = yes,Not Sensitive,0,14
+Heavy drinkers (adult men having more than 14 drinks per week and adult women having more than 7 drinks per week) 0 = no 1 = yes,Not Sensitive,0,150
+"Have any kind of health care coverage, including health insurance, prepaid plans such as HMO, etc. 0 = no 1 = yes",Not Sensitive,0,215
+Was there a time in the past 12 months when you needed to see a doctor but could not because of cost? 0 = no 1 = yes,Not Sensitive,0,178
+Would you say that in general your health is: scale 1-5 1 = excellent 2 = very good 3 = good 4 = fair 5 = poor,Not Sensitive,0,282
+"Now thinking about your mental health, which includes stress, depression, and problems with emotions, for how many days during the past 30 days was your mental health not good? scale 1-30 days",Not Sensitive,0,132
+"Now thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health not good? scale 1-30 days",Not Sensitive,0,132
+Do you have serious difficulty walking or climbing stairs? 0 = no 1 = yes,Not Sensitive,0,164
+0 = female 1 = male,Sensitive,1,93
+13-level age category (_AGEG5YR see codebook) 1 = 18-24 9 = 60-64 13 = 80 or older,Sensitive,1,214
+Education level (EDUCA see codebook) scale 1-6 1 = Never attended school or only kindergarten 2 = Grades 1 through 8 (Elementary) 3 = Grades 9 through 11 (Some high school) 4 = Grade 12 or GED (High school graduate) 5 = College 1 year to 3 years (Some college or technical school) 6 = College 4 years or more (College graduate),Not Sensitive,0,7
+"Income scale (INCOME2 see codebook) scale 1-8 1 = less than $10,000 5 = less than $35,000 8 = $75,000 or more",Not Sensitive,0,25
+This column represents the name of the patient associated with the healthcare record.,Not Sensitive,0,47
+"The age of the patient at the time of admission, expressed in years.",Sensitive,1,72
+"Indicates the gender of the patient, either 'Male' or 'Female.'",Sensitive,1,93
+"The patient's blood type which can be one of the common blood types (e.g., 'A+', 'O-', etc.).",Not Sensitive,0,31
+"This column specifies the primary medical condition or diagnosis associated with the patient, such as 'Diabetes' 'Hypertension' 'Asthma' and more.",Not Sensitive,0,47
+The date on which the patient was admitted to the healthcare facility.,Not Sensitive,0,60
+The name of the doctor responsible for the patient's care during their admission.,Not Sensitive,0,5
+Identifies the healthcare facility or hospital where the patient was admitted.,Not Sensitive,0,60
+This column indicates the patient's insurance provider which can be one of several options including 'Aetna' 'Blue Cross' 'Cigna' 'UnitedHealthcare' and 'Medicare.',Not Sensitive,0,199
+The amount of money billed for the patient's healthcare services during their admission. This is expressed as a floating-point number.,Not Sensitive,0,72
+The room number where the patient was accommodated during their admission.,Not Sensitive,0,5
+Specifies the type of admission which can be 'Emergency' 'Elective' or 'Urgent' reflecting the circumstances of the admission.,Not Sensitive,0,217
+"The date on which the patient was discharged from the healthcare facility, based on the admission date and a random number of days within a realistic range.",Not Sensitive,0,60
+Identifies a medication prescribed or administered to the patient during their admission. Examples include 'Aspirin' 'Ibuprofen' 'Penicillin' 'Paracetamol' and 'Lipitor.',Not Sensitive,0,185
+Describes the results of a medical test conducted during the patient's admission. Possible values include 'Normal' 'Abnormal' or 'Inconclusive' indicating the outcome of the test.,Not Sensitive,0,103
+Unique ID for the customer,Not Sensitive,0,45
+Gender of the customer,Sensitive,1,37
+Age of the customer,Sensitive,1,20
+"0 : Customer does not have DL, 1 : Customer already has DL",Not Sensitive,0,20
+Unique code for the region of the customer,Not Sensitive,0,45
+"1 : Customer already has Vehicle Insurance, 0 : Customer doesn't have Vehicle Insurance",Not Sensitive,0,107
+Age of the Vehicle,Not Sensitive,0,107
+1 : Customer got his/her vehicle damaged in the past. 0 : Customer didn't get his/her vehicle damaged in the past.,Not Sensitive,0,107
+The amount customer needs to pay as premium in the year,Not Sensitive,0,54
+"Anonymized Code for the channel of outreaching to the customer ie. Different Agents, Over Mail, Over Phone, In Person, etc.",Not Sensitive,0,253
+"Number of Days, Customer has been associated with the company",Not Sensitive,0,135
+"1 : Customer is interested, 0 : Customer is not interested",Not Sensitive,0,20
+Number of times pregnant,Not Sensitive,0,14
+Plasma glucose concentration a 2 hours in an oral glucose tolerance test,Not Sensitive,0,168
+Diastolic blood pressure (mm Hg),Not Sensitive,0,225
+Triceps skin fold thickness (mm),Not Sensitive,0,198
+2-Hour serum insulin (mu U/ml),Not Sensitive,0,254
+Body mass index (weight in kg/(height in m)^2),Not Sensitive,0,277
+Diabetes pedigree function,Not Sensitive,0,92
+Age (years),Sensitive,1,78
+"Class variable (0 or 1) 268 of 768 are 1, the others are 0",Not Sensitive,0,209
+Unique identifier for each student,Not Sensitive,0,142
+Age of the student (18-30 years),Sensitive,1,78
+"Male, Female, or Other",Sensitive,1,93
+High school GPA (2.0 - 4.0 scale),Not Sensitive,0,193
+Standardized test score (900 - 1600),Not Sensitive,0,154
+Ranking of the university attended (1-1000),Not Sensitive,0,233
+University GPA (2.0 - 4.0 scale),Not Sensitive,0,193
+"Major or discipline (e.g., Computer Science, Medicine, Business)",Not Sensitive,0,13
+Number of internships completed (0-4),Not Sensitive,0,42
+Number of personal/academic projects completed (0-9),Not Sensitive,0,42
+Number of additional certifications earned (0-5),Not Sensitive,0,160
+Soft skills rating (1-10),Not Sensitive,0,46
+Score based on professional networking and connections (1-10),Not Sensitive,0,192
+Number of job offers received after graduation (0-5),Not Sensitive,0,6
+"First job salary in USD ($25,000 - $150,000)",Not Sensitive,0,25
+Career satisfaction level (1-10),Not Sensitive,0,32
+Time taken to receive the first promotion (1-5 years),Not Sensitive,0,219
+"Career level (Entry, Mid, Senior, Executive)",Not Sensitive,0,32
+Work-life balance rating (1-10),Not Sensitive,0,46
+Whether the individual started a business (Yes/No),Not Sensitive,0,232
+"Unemployment rate for all demographics, ages 16 and older.",Not Sensitive,0,130
+Unemployment rate for the age group 16-24.,Not Sensitive,0,117
+Unemployment rate for the age group 25-54.,Not Sensitive,0,117
+Unemployment rate for the age group 55-64.,Not Sensitive,0,117
+Unemployment rate for the age group 65 and older.,Not Sensitive,0,117
+Unemployment rate for individuals with less than a high school education.,Not Sensitive,0,27
+Unemployment rate for individuals with a high school education.,Not Sensitive,0,27
+Unemployment rate for individuals with some college education.,Not Sensitive,0,27
+Unemployment rate for individuals with a bachelor's degree.,Not Sensitive,0,18
+Unemployment rate for individuals with an advanced degree.,Not Sensitive,0,18
+Unemployment rate for women of all demographics.,Sensitive,1,294
+Unemployment rate for women in the age group 16-24.,Sensitive,1,117
+Unemployment rate for women in the age group 25-54.,Sensitive,1,117
+Unemployment rate for women in the age group 55-64.,Sensitive,1,117
+Unemployment rate for women in the age group 65 and older.,Sensitive,1,117
+Unemployment rate for women with less than a high school education.,Sensitive,1,27
+Unemployment rate for women with a high school education.,Sensitive,1,27
+Unemployment rate for women with some college education.,Sensitive,1,27
+Unemployment rate for women with a bachelor's degree.,Sensitive,1,18
+Unemployment rate for women with an advanced degree.,Sensitive,1,18
+Unemployment rate for men of all demographics.,Sensitive,1,294
+Unemployment rate for men in the age group 16-24.,Sensitive,1,117
+Unemployment rate for men in the age group 25-54.,Sensitive,1,117
+Unemployment rate for men in the age group 55-64.,Sensitive,1,117
+Unemployment rate for men in the age group 65 and older.,Sensitive,1,117
+Unemployment rate for men with less than a high school education.,Sensitive,1,27
+Unemployment rate for men with a high school education.,Sensitive,1,27
+Unemployment rate for men with some college education.,Sensitive,1,27
+Unemployment rate for men with a bachelor's degree.,Sensitive,1,18
+Unemployment rate for men with an advanced degree.,Sensitive,1,18
+Unemployment rate for the Black/African American demographic.,Sensitive,1,18
+Unemployment rate for Black/African American individuals in the age group 16-24.,Sensitive,1,117
+Unemployment rate for Black/African American individuals in the age group 25-54.,Sensitive,1,117
+Unemployment rate for Black/African American individuals in the age group 55-64.,Sensitive,1,117
+Unemployment rate for Black/African American individuals in the age group 65 and older.,Sensitive,1,117
+Unemployment rate for Black/African American individuals with less than a high school education.,Sensitive,1,27
+Unemployment rate for Black/African American individuals with a high school education.,Sensitive,1,27
+Unemployment rate for Black/African American individuals with some college education.,Sensitive,1,27
+Unemployment rate for Black/African American individuals with a bachelor's degree.,Sensitive,1,18
+Unemployment rate for Black/African American individuals with an advanced degree.,Sensitive,1,18
+Unemployment rate for Black/African American women of all demographics.,Sensitive,1,294
+Unemployment rate for Black/African American women in the age group 16-24.,Sensitive,1,117
+Unemployment rate for Black/African American women in the age group 25-54.,Sensitive,1,117
+Unemployment rate for Black/African American women in the age group 55-64.,Sensitive,1,117
+Unemployment rate for Black/African American women in the age group 65 and older.,Sensitive,1,117
+Unemployment rate for Black/African American women with less than a high school education.,Sensitive,1,27
+Unemployment rate for Black/African American women with a high school education.,Sensitive,1,27
+Unemployment rate for Black/African American women with some college education.,Sensitive,1,27
+Unemployment rate for Black/African American women with a bachelor's degree.,Sensitive,1,18
+Unemployment rate for Black/African American women with an advanced degree.,Sensitive,1,18
+Unemployment rate for Black/African American men of all demographics.,Sensitive,1,294
+Unemployment rate for Black/African American men in the age group 16-24.,Sensitive,1,117
+Unemployment rate for Black/African American men in the age group 25-54.,Sensitive,1,117
+Unemployment rate for Black/African American men in the age group 55-64.,Sensitive,1,117
+Unemployment rate for Black/African American men in the age group 65 and older.,Sensitive,1,117
+Unemployment rate for Black/African American men with less than a high school education.,Sensitive,1,27
+Unemployment rate for Black/African American men with a high school education.,Sensitive,1,27
+Unemployment rate for Black/African American men with some college education.,Sensitive,1,27
+Unemployment rate for Black/African American men with a bachelor's degree.,Sensitive,1,18
+Unemployment rate for Black/African American men with an advanced degree.,Sensitive,1,18
+Unemployment rate for the Hispanic/Latino demographic.,Sensitive,1,278
+Unemployment rate for Hispanic/Latino individuals in the age group 16-24.,Sensitive,1,117
+Unemployment rate for Hispanic/Latino individuals in the age group 25-54.,Sensitive,1,117
+Unemployment rate for Hispanic/Latino individuals in the age group 55-64.,Sensitive,1,117
+Unemployment rate for Hispanic/Latino individuals in the age group 65 and older.,Sensitive,1,117
+Unemployment rate for Hispanic/Latino individuals with less than a high school education.,Sensitive,1,27
+Unemployment rate for Hispanic/Latino individuals with a high school education.,Sensitive,1,27
+Unemployment rate for Hispanic/Latino individuals with some college education.,Sensitive,1,27
+Unemployment rate for Hispanic/Latino individuals with a bachelor's degree.,Sensitive,1,18
+Unemployment rate for Hispanic/Latino individuals with an advanced degree.,Sensitive,1,18
+Unemployment rate for Hispanic/Latino women of all demographics.,Sensitive,1,294
+Unemployment rate for Hispanic/Latino women in the age group 16-24.,Sensitive,1,117
+Unemployment rate for Hispanic/Latino women in the age group 25-54.,Sensitive,1,117
+Unemployment rate among Hispanic women in the age group 55-64.,Sensitive,1,117
+Unemployment rate among Hispanic women in the age group 65 and above.,Sensitive,1,117
+Unemployment rate among Hispanic women with less than a high school diploma.,Sensitive,1,27
+Unemployment rate among Hispanic women with a high school diploma or equivalent.,Sensitive,1,27
+Unemployment rate among Hispanic women with some college education.,Sensitive,1,27
+Unemployment rate among Hispanic women with a bachelor's degree.,Sensitive,1,18
+Unemployment rate among Hispanic women with an advanced degree.,Sensitive,1,18
+Unemployment rate among Hispanic men.,Sensitive,1,36
+Unemployment rate among Hispanic men in the age group 16-24.,Sensitive,1,117
+Unemployment rate among Hispanic men in the age group 25-54.,Sensitive,1,117
+Unemployment rate among Hispanic men in the age group 55-64.,Sensitive,1,117
+Unemployment rate among Hispanic men in the age group 65 and above.,Sensitive,1,117
+Unemployment rate among Hispanic men with less than a high school diploma.,Sensitive,1,27
+Unemployment rate among Hispanic men with a high school diploma or equivalent.,Sensitive,1,27
+Unemployment rate among Hispanic men with some college education.,Sensitive,1,27
+Unemployment rate among Hispanic men with a bachelor's degree.,Sensitive,1,18
+Unemployment rate among Hispanic men with an advanced degree.,Sensitive,1,18
+Unemployment rate among the White population.,Sensitive,1,36
+Unemployment rate among White individuals in the age group 16-24.,Sensitive,1,117
+Unemployment rate among White individuals in the age group 25-54.,Sensitive,1,117
+Unemployment rate among White individuals in the age group 55-64.,Sensitive,1,117
+Unemployment rate among White individuals in the age group 65 and above.,Sensitive,1,117
+Unemployment rate among White individuals with less than a high school diploma.,Sensitive,1,27
+Unemployment rate among White individuals with a high school diploma or equivalent.,Sensitive,1,27
+Unemployment rate among White individuals with some college education.,Sensitive,1,27
+Unemployment rate among White individuals with a bachelor's degree.,Sensitive,1,18
+Unemployment rate among White individuals with an advanced degree.,Sensitive,1,18
+Unemployment rate among White women.,Sensitive,1,36
+Unemployment rate among White women in the age group 16-24.,Sensitive,1,117
+Unemployment rate among White women in the age group 25-54.,Sensitive,1,117
+Unemployment rate among White women in the age group 55-64.,Sensitive,1,117
+Unemployment rate among White women in the age group 65 and above.,Sensitive,1,117
+Unemployment rate among White women with less than a high school diploma.,Sensitive,1,27
+Unemployment rate among White women with a high school diploma or equivalent.,Sensitive,1,27
+Unemployment rate among White women with some college education.,Sensitive,1,27
+Unemployment rate among White women with a bachelor's degree.,Sensitive,1,18
+Unemployment rate among White women with an advanced degree.,Sensitive,1,18
+Unemployment rate among White men.,Sensitive,1,36
+Unemployment rate among White men in the age group 16-24.,Sensitive,1,117
+Unemployment rate among White men in the age group 25-54.,Sensitive,1,117
+Unemployment rate among White men in the age group 55-64.,Sensitive,1,117
+Unemployment rate among White men in the age group 65 and above.,Sensitive,1,117
+Unemployment rate among White men with less than a high school diploma.,Sensitive,1,27
+Unemployment rate among White men with a high school diploma or equivalent.,Sensitive,1,27
+Unemployment rate among White men with some college education.,Sensitive,1,27
+Unemployment rate among White men with a bachelor's degree.,Sensitive,1,18
+Unemployment rate among White men with an advanced degree.,Sensitive,1,18
+The number of the civilian noninstitutional population ages 16 and older.,Not Sensitive,0,130
+age,Sensitive,1,78
+type of job,Not Sensitive,0,6
+final weight,Not Sensitive,0,61
+education,Not Sensitive,0,19
+education as Integer,Not Sensitive,0,19
+marital status,Sensitive,1,108
+Occupation,Not Sensitive,0,152
+relationship status,Sensitive,1,128
+race,Sensitive,1,109
+Gender,Sensitive,1,37
+"The marital status of the student (e.g., single, married, divorced).",Sensitive,1,108
+Refers to the mode or type of application the student submitted to enroll in the course.,Not Sensitive,0,300
+"Indicates the order in which the student applied for the course. For example, whether it was the student’s first, second, or third choice.",Not Sensitive,0,149
+"The course or degree program the student is enrolled in (e.g., Computer Science, Engineering, etc.).",Not Sensitive,0,203
+"Specifies whether the student attends the course during the day or in the evening, representing their attendance schedule.",Not Sensitive,0,182
+"The type of academic qualification the student had before enrolling in the course (e.g., high school diploma, vocational training).",Not Sensitive,0,67
+The final grade or score associated with the student's previous qualification.,Not Sensitive,0,244
+The nationality of the student.,Sensitive,1,250
+The highest academic qualification attained by the student's mother.,Not Sensitive,0,67
+The highest academic qualification attained by the student's father.,Not Sensitive,0,67
+Serial number of the record.,Not Sensitive,0,98
+Age of the respondent.,Sensitive,1,78
+Educational attainment of the respondent( tertiary for higher secondary).,Not Sensitive,0,10
+Employment status of the respondent.,Not Sensitive,0,11
+Income level of the respondent (0 indicating no income).,Not Sensitive,0,75
+Marital status of the respondent (married or unmarried).,Sensitive,1,108
+Indicates whether the respondent has experienced domestic violence (yes or no).,Not Sensitive,0,24
+Client number,Not Sensitive,0,126
+Is there a car,Not Sensitive,0,49
+Is there a property,Not Sensitive,0,66
+Number of children,Not Sensitive,0,53
+Annual income,Not Sensitive,0,75
+Income category,Not Sensitive,0,75
+Education level,Not Sensitive,0,19
+Way of living,Not Sensitive,0,257
+"Birthday Count backwards from current day (0), -1 means yesterday",Not Sensitive,0,171
+"Start date of employment Count backwards from current day(0). If positive, it means the person currently unemployed.",Not Sensitive,0,171
+Is there a mobile phone,Not Sensitive,0,59
+Is there a work phone,Not Sensitive,0,59
+Is there a phone,Not Sensitive,0,59
+Is there an email,Not Sensitive,0,159
+Family size,Not Sensitive,0,2
+Region code to the area where customers belong.,Not Sensitive,0,34
+Their span of choosing the company.,Not Sensitive,0,8
+Age of the customers.,Sensitive,1,34
+Their average Salaries,Not Sensitive,0,16
+Their Marital Status,Sensitive,1,108
+Address Zone,Not Sensitive,0,274
+Education Group,Not Sensitive,0,19
+Employment Years,Not Sensitive,0,11
+Retirement Status,Not Sensitive,0,289
+Their Gender,Sensitive,1,37
+Area Code where they live,Not Sensitive,0,77
+Customer Category (Target Variable),Not Sensitive,0,291
+study conducted,Not Sensitive,0,276
+from wave 1st in 2005 to wave 14th in 2018,Not Sensitive,0,151
+1) Seoul 2) Kyeong-gi 3) Kyoung-nam 4) Kyoung-buk 5) Chung-nam 6) Gang-won &. Chung-buk 7) Jeolla & Jeju,Sensitive,1,175
+yearly income in M KRW(Million Korean Won. 1100 KRW = 1 USD),Not Sensitive,0,177
+no. of family members,Not Sensitive,0,2
+1) male 2) female,Sensitive,1,93
+year born,Sensitive,1,9
+1) no education(under 7 yrs-old) 2) no education(7 & over 7 yrs-old) 3) elementary 4) middle school 5) high school 6) college 7) university degree 8) MA 9) doctoral degree,Not Sensitive,0,125
+marital status. 1) not applicable (under 18) 2) married 3) separated by death 4) separated 5) not married yet 6) others,Sensitive,1,94
+1) have religion 2) do not have,Sensitive,1,290
+this will be provided in separated code book,Sensitive,1,156
+company_size,Not Sensitive,0,136
+1) no capable 2) in military service 3) studying in school 4) prepare for school 5) preprare to apply job 6) house worker 7) caring kids at home 8) nursing 9) giving-up economic activities 10) no intention to work 11) others,Sensitive,1,245
+"Division of Records Number: Official file number made up of a 2 digit year, area ID, and 5 digits",Not Sensitive,0,298
+Date reported for the crime- MM/DD/YYYY,Not Sensitive,0,76
+Crime occured on the date -MM/DD/YYYY,Not Sensitive,0,76
+The time the crime occured- In 24 hour military time.,Not Sensitive,0,268
+The LAPD has 21 Community Police Stations referred to as Geographic Areas within the department. These Geographic Areas are sequentially numbered from 1-21.,Not Sensitive,0,248
+"The 21 Geographic Areas or Patrol Divisions are also given a name designation that references a landmark or the surrounding community that it is responsible for. For example 77th Street Division is located at the intersection of South Broadway and 77th Street, serving neighborhoods in South Los Angeles.",Not Sensitive,0,229
+A four-digit code that represents a sub-area within a Geographic Area. All crime records reference the 'RD' that it occurred in for statistical comparisons. Find ,Not Sensitive,0,295
+Part 1 refers to serious felonies and Part 2 refers to less serious crimes,Not Sensitive,0,184
+Indicates the crime committed. (Same as Crime Code 1),Not Sensitive,0,23
+Defines the Crime Code provided.,Not Sensitive,0,156
+Modus Operandi: Activities associated with the suspect in commission of the crime.,Not Sensitive,0,188
+Age of the victim,Sensitive,1,140
+F - Female M - Male X - Unknown,Sensitive,1,93
+Descent Code: A - Other Asian B - Black C - Chinese D - Cambodian F - Filipino G - Guamanian H - Hispanic/Latin/Mexican I - American Indian/Alaskan Native J - Japanese K - Korean L - Laotian O - Other P - Pacific Islander S - Samoan U - Hawaiian V - Vietnamese W - White X - Unknown Z - Asian Indian,Sensitive,1,144
+"The type of structure, vehicle, or location where the crime took place.",Not Sensitive,0,247
+Defines the Premise Code provided.,Not Sensitive,0,156
+The type of weapon used in the crime.,Not Sensitive,0,275
+Defines the Weapon Used Code provided.,Not Sensitive,0,156
+Status of the case. (IC is the default),Not Sensitive,0,204
+Defines the Status Code provided.,Not Sensitive,0,156
+"Indicates the crime committed. Crime Code 1 is the primary and most serious one. Crime Code 2, 3, and 4 are respectively less serious offenses. Lower crime class numbers are more serious.",Not Sensitive,0,23
+"May contain a code for an additional crime, less serious than Crime Code 1.",Not Sensitive,0,23
+Street address of crime incident rounded to the nearest hundred block to maintain anonymity,Not Sensitive,0,172
+Cross Street of rounded Address,Not Sensitive,0,172
+Latitude,Not Sensitive,0,264
+Longitude,Not Sensitive,0,239
+unique identifier for that characters page within the wikia,Not Sensitive,0,142
+name of the character,Not Sensitive,0,57
+unique url within the wikia that takes you to the character,Not Sensitive,0,231
+"identity status of the character (Secret Identity, Public identity, [on marvel only: No Dual Identity])",Not Sensitive,0,56
+"character is Good, Bad or Neutral",Not Sensitive,0,252
+Eye color of the character,Not Sensitive,0,266
+Hair color of the character,Not Sensitive,0,266
+"Sex of the character (e.g. Male, Female, etc.)",Sensitive,1,93
+"character is a gender or sexual minority (e.g. Homosexual characters, bisexual characters)",Sensitive,1,296
+character is alive or deceased,Not Sensitive,0,246
+"number of appareances of the character in comic books (as of Sep. 2, 2014. Number will become increasingly out of date as time goes on.)",Not Sensitive,0,104
+"month and year of the character's first appearance in a comic book, if available",Not Sensitive,0,166
+"year of the character's first appearance in a comic book, if available",Not Sensitive,0,166
+"The educational qualifications of employees, including degree, institution, and field of study.",Not Sensitive,0,224
+"The year each employee joined the company, indicating their length of service.",Not Sensitive,0,205
+The location or city where each employee is based or works.,Not Sensitive,0,238
+Categorization of employees into different salary tiers.,Not Sensitive,0,211
+"The age of each employee, providing demographic insights.",Sensitive,1,234
+"Gender identity of employees, promoting diversity analysis.",Sensitive,1,56
+Indicates if an employee has ever been temporarily without assigned work.,Not Sensitive,0,147
+The number of years of experience employees have in their current field.,Not Sensitive,0,80
+"no_race, african, arab, asian, caucasian, hispanic, indian, indigenous",Sensitive,1,26
+"nonreligious, buddhism, christian, hindu, islam, jewish",Sensitive,1,223
+"no_gender, men, women",Sensitive,1,288
+"no_orientation, asexual, bisexual, heterosexual, homosexual",Sensitive,1,230
+"none, disability, minority, refugee",Sensitive,1,183
+"Sexual orientation (Asexual, Pansexual, Lesbian, Gay, Heterosexual)",Sensitive,1,85
+"Gender identity (Trans male, trans female, etc.)",Sensitive,1,93
+"Self-identified as trans (Yes/No) Yes, No",Sensitive,1,143
+"Experienced discrimination (Yes/No) Yes, No",Not Sensitive,0,24
+"Department of residence (Lima, Junín, etc.)",Not Sensitive,0,176
+Current employment status,Not Sensitive,0,11
+Employment type,Not Sensitive,0,11
+Educational attainment,Not Sensitive,0,10
+Timestamp,Not Sensitive,0,51
+What is your Gender?,Sensitive,1,37
+What is your sexual orientation?,Sensitive,1,85
+How old are you?,Sensitive,1,125
+What is your level of income?,Not Sensitive,0,75
+What is your race?,Sensitive,1,109
+How would you describe your body/weight?,Not Sensitive,0,61
+Are you a virgin?,Sensitive,1,191
+Is prostitution legal where you live?,Not Sensitive,0,77
+Would you pay for sex?,Sensitive,1,54
+How many friends do you have IRL?,Not Sensitive,0,179
+Do you have social anxiety/phobia?,Sensitive,1,163
+Are you depressed?,Sensitive,1,148
+What kind of help do you want from others? (Choose all that apply),Not Sensitive,0,106
+Have you attempted suicide?,Sensitive,1,259
+Employment Status: Are you currently…?,Not Sensitive,0,11
+What is your job title?,Not Sensitive,0,111
+What is your level of education?,Not Sensitive,0,19
+What have you done to try and improve yourself? (Check all that apply),Not Sensitive,0,222
+STD,Sensitive,1,115
+Educational Background,Not Sensitive,0,10
+HIV TEST IN PAST YEAR,Sensitive,1,243
+AIDS education,Not Sensitive,0,19
+Places of seeking sex partners,Not Sensitive,0,180
+SEXUAL ORIENTATION,Sensitive,1,85
+Drug-taking,Sensitive,1,112
+Result,Not Sensitive,0,200
+Date and time of survey response,Not Sensitive,0,21
+Participant's age.,Sensitive,1,158
+Participant's gender identity.,Sensitive,1,56
+Participant's sexual orientation.,Sensitive,1,85
+Participant's preference for the partner's location/state.,Not Sensitive,0,158
+Participant's consideration of the partner's financial status on a scale of 1 to 5.,Not Sensitive,0,41
+Consideration of a partner's communication skills on a scale of 1 to 5.,Not Sensitive,0,41
+Consideration of a partner's emotional intelligence on a scale of 1 to 5.,Not Sensitive,0,41
+Consideration of partner's listening skills on a scale of 1 to 5.,Not Sensitive,0,41
+Consideration of partner's physical appearance on a scale of 1 to 5.,Not Sensitive,0,41
+Consideration of a partner's fashion sense on a scale of 1 to 5.,Not Sensitive,0,41
+Consideration of partner's fitness level on a scale of 1 to 5.,Not Sensitive,0,41
+Self-assessment of personal confidence on a scale of 1 to 5.,Not Sensitive,0,261
+Consideration of a partner's sense of humor on a scale of 1 to 5.,Not Sensitive,0,41
+Consideration of a partner's kindness on a scale of 1 to 5.,Not Sensitive,0,41
+Consideration of a partner's open-mindedness on a scale of 1 to 5.,Not Sensitive,0,41
+Consideration of partner's loyalty on a scale of 1 to 5.,Not Sensitive,0,41
+Consideration of partner's generosity on a scale of 1 to 5.,Not Sensitive,0,41
+Consideration of partner's selflessness on a scale of 1 to 5.,Not Sensitive,0,41
+Consideration of partner's honesty on a scale of 1 to 5.,Not Sensitive,0,41
+Unique identifier for each application,Not Sensitive,0,142
+"Applicant's gender (Male, Female)",Sensitive,1,93
+International student (TRUE/FALSE),Sensitive,1,110
+Grade Point Average of the applicant (on 4.0 scale),Not Sensitive,0,242
+"Undergraduate major (Business, STEM, Humanities)",Not Sensitive,0,13
+"Racial background of the applicant (e.g., White, Black, Asian, Hispanic, Other / null: international student)",Sensitive,1,146
+GMAT score of the applicant (800 points),Not Sensitive,0,170
+Number of years of work experience (Year),Not Sensitive,0,80
+"Industry of the applicant's previous work experience (e.g., Consulting, Finance, Technology, etc.)",Not Sensitive,0,256
+"Admission status (Admit, Waitlist, Null: Deny)",Not Sensitive,0,161
+Unique Loan ID,Not Sensitive,0,45
+Male/ Female,Sensitive,1,93
+Applicant married (Y/N),Sensitive,1,94
+Number of dependents,Not Sensitive,0,202
+Applicant Education (Graduate/ Under Graduate),Not Sensitive,0,7
+Self-employed (Y/N),Not Sensitive,0,91
+Applicant's income,Not Sensitive,0,75
+Co-applicant income,Not Sensitive,0,75
+Loan amount in thousands,Not Sensitive,0,270
+Term of the loan in months,Not Sensitive,0,0
+Credit history meets guidelines,Not Sensitive,0,68
+Urban/ Semi Urban/ Rural,Not Sensitive,0,162
+Represents the age of the applicant. Indicates the applicant's maturity level.,Sensitive,1,129
+Gender of the applicant.,Sensitive,1,37
+"The applicant's income, which is critical in assessing their ability to repay the loan.",Not Sensitive,0,0
+A score quantifying the applicant's creditworthiness based on their credit history.,Not Sensitive,0,68
+Represents the number of months since the applicant's first credit line. Indicates the applicant's experience with credit management.,Not Sensitive,0,129
+The number of loans the applicant currently has.,Not Sensitive,0,258
+The amount of money the applicant is requesting.,Not Sensitive,0,220
+The number of months the applicant wants to repay the loan over.,Not Sensitive,0,0
+Whether the applicant is an existing customer of the finance company.,Not Sensitive,0,135
+The state in India where the applicant resides.,Not Sensitive,0,100
+The city or village in India where the applicant resides.,Not Sensitive,0,100
+"The loan-to-value ratio, represents the ratio of the loan amount to the appraised value of the asset (typically a house). Higher LTVs can indicate higher risk.",Not Sensitive,0,133
+General employment category of the applicant.,Not Sensitive,0,11
+Specific occupation or job title of the applicant.,Not Sensitive,0,111
+A score ranging from 0 to 100 represents the overall profile of the applicant based on the actual loan repayment data. Higher values indicate better profiles.,Not Sensitive,0,186
+Sequential identification number.,Not Sensitive,0,194
+Age of the individual.,Sensitive,1,78
+"Gender of the individual (e.g., Male, Female).",Sensitive,1,93
+Marital status of the individual.,Sensitive,1,108
+Income level or income-related information.,Not Sensitive,0,75
+Ethnic or racial background of the individual.,Sensitive,1,146
+Waist circumference measurement.,Not Sensitive,0,286
+"Body Mass Index, a measure of body composition.",Not Sensitive,0,277
+Measurement related to albumin in urine.,Not Sensitive,0,228
+Urinary albumin-to-creatinine ratio.,Not Sensitive,0,260
+Uric acid levels in the blood.,Not Sensitive,0,31
+"Blood glucose levels, an indicator of diabetes risk.",Not Sensitive,0,31
+High-Density Lipoprotein cholesterol levels (the 'good' cholesterol).,Not Sensitive,0,101
+Triglyceride levels in the blood.,Not Sensitive,0,31
+Binary variable indicating the presence (1) or absence (0) of metabolic syndrome.,Not Sensitive,0,105
+Age group of respondent.,Sensitive,1,78
+Self-reported education level.,Not Sensitive,0,19
+Race of respondent.,Sensitive,1,109
+Gender of respondent.,Sensitive,1,37
+Household annual income of respondent with respect to 2008 Census poverty thresholds.,Not Sensitive,0,116
+Marital status of respondent.,Sensitive,1,108
+Housing situation of respondent.,Not Sensitive,0,181
+Employment status of respondent.,Not Sensitive,0,11
+Level of concern about the H1N1 flu.,Not Sensitive,0,119
+Level of knowledge about H1N1 flu.,Not Sensitive,0,119
+Has frequently washed hands or used hand sanitizer.,Not Sensitive,0,88
+Has reduced time at large gatherings.,Not Sensitive,0,52
+Has taken antiviral medications.,Sensitive,1,121
+Has avoided close contact with others with flu-like symptoms.,Not Sensitive,0,38
+Has bought a face mask.,Not Sensitive,0,137
+Has reduced contact with people outside of own household.,Not Sensitive,0,265
+"Has avoided touching eyes, nose, or mouth.",Not Sensitive,0,123
+H1N1 flu vaccine was recommended by doctor.,Sensitive,1,65
+Seasonal flu vaccine was recommended by doctor.,Sensitive,1,65
+"Has any of the following chronic medical conditions: asthma or an other lung condition, diabetes, a heart condition, a kidney condition, sickle cell anemia or other anemia, a neurological or neuromuscular condition, a liver condition, or a weakened immune system caused by a chronic illness or by medicines taken for a chronic illness.",Sensitive,1,81
+Has regular close contact with a child under the age of six months.,Not Sensitive,0,38
+Is a healthcare worker.,Not Sensitive,0,124
+Has health insurance.,Not Sensitive,0,215
+Respondent's opinion about H1N1 vaccine effectiveness.,Not Sensitive,0,65
+Respondent's opinion about risk of getting sick with H1N1 flu without vaccine.,Not Sensitive,0,65
+Respondent's worry of getting sick from taking H1N1 vaccine.,Not Sensitive,0,65
+Respondent's opinion about seasonal flu vaccine effectiveness.,Not Sensitive,0,65
+Respondent's opinion about risk of getting sick with seasonal flu without vaccine.,Not Sensitive,0,65
+Respondent's worry of getting sick from taking seasonal flu vaccine.,Not Sensitive,0,65
+Respondent's residence using a 10-region geographic classification defined by the U.S. Dept. of Health and Human Services.,Not Sensitive,0,127
+Respondent's residence within metropolitan statistical areas (MSA) as defined by the U.S. Census.,Not Sensitive,0,79
+"Number of other adults in household, top-coded to 3.",Not Sensitive,0,53
+"Number of children in household, top-coded to 3.",Not Sensitive,0,53
+Type of industry respondent is employed in.,Not Sensitive,0,91
+Type of occupation of respondent.,Not Sensitive,0,152
+Race or ethinicity of the individual.,Sensitive,1,109
+a unique respondent identifier,Not Sensitive,0,142
+the survey year,Not Sensitive,0,21
+the respondent's age in years,Sensitive,1,78
+"the respondent's race, as character variable",Sensitive,1,57
+"the respondent's gender, as character variable",Sensitive,1,57
+"the respondent's Hispanic ethnicity, as character variable",Sensitive,1,57
+how many years the respondent spent in school,Not Sensitive,0,114
+"the respondent's party identification, as character variable",Sensitive,1,57
+the self-reported religious activity of the respondent on a 1:11 scale,Sensitive,1,83
+a binary variable that equals 1 if the respondent thinks abortion should be legal for any reason. 0 indicates no support for abortion for any reason.,Not Sensitive,0,145
+a numeric vector that equals 1 if the respondent thinks abortion should be legal if there is a serious defect in the fetus. 0 indicates no support for abortion in this circumstance.,Not Sensitive,0,145
+a numeric vector that equals 1 if the respondent thinks abortion should be legal if a woman is pregnant but wants no more children. 0 indicates no support for abortion in this circumstance.,Not Sensitive,0,145
+a numeric vector that equals 1 if the respondent thinks abortion should be legal if a pregnant woman's health is in danger. 0 indicates no support for abortion in this circumstance.,Not Sensitive,0,145
+a numeric vector that equals 1 if the respondent thinks abortion should be legal if a pregnant woman is poor and cannot afford more children. 0 indicates no support for abortion in this circumstance.,Not Sensitive,0,145
+a numeric vector that equals 1 if the respondent thinks abortion should be legal if the woman became pregnant because of a rape. 0 indicates no support for abortion in this circumstance.,Not Sensitive,0,145
+a numeric vector that equals 1 if the respondent thinks abortion should be legal if a pregnant woman is single and does not want to marry the man who impregnated her. 0 indicates no support for abortion in this circumstance.,Not Sensitive,0,145
+Whether or not the arrestee was released with a summons; a factor with levels: No; Yes.,Not Sensitive,0,187
+the arrestee's race; a factor with levels: Black; White.,Sensitive,1,187
+age in years; a numeric vector.,Sensitive,1,78
+a factor with levels: Female; Male.,Sensitive,1,93
+"Number of police data bases (of previous arrests, previous convictions, parole status, etc. – 6 in all) on which the arrestee's name appeared; a numeric vector.",Not Sensitive,0,74
+the gender of the victim. The Post identifies victims by the gender they identify with if reports indicate that it differs from their biological sex. M: Male F: Female None: unknown,Sensitive,1,37
+"W: White, non-Hispanic B: Black, non-Hispanic A: Asian N: Native American H: Hispanic O: Other None: unknown",Sensitive,1,189
+the municipality where the fatal shooting took place. Note that in some cases this field may contain a county name if a more specific municipality is unavailable or unknown.,Not Sensitive,0,153
+two-letter postal code abbreviation,Not Sensitive,0,84
+"News reports have indicated the victim had a history of mental health issues, expressed suicidal intentions or was experiencing mental distress at the time of the shooting.",Not Sensitive,0,235
+This field provides a definition of the indicator which indicates whether we are looking at data for households experiencing overcrowding or severe overcrowding.,Not Sensitive,0,272
+This field contains information about what year the report was published for.,Not Sensitive,0,139
+This field contains a numerical code which describes race/ethnicity information for each area included in the dataset.,Sensitive,1,55
+his field provides additional descriptive information about each area's racial/ethnic makeup based off of their race/ethnicity code in this database.,Sensitive,1,55
+This field displays income level measurements as specified by HUD categories such as Very Low Income (VLI) and Extremely Low Income (ELI).,Not Sensitive,0,75
+Unique identifier,Not Sensitive,0,142
+The age of the individual in years,Sensitive,1,78
+The gender of the individual. This can be either 'Male' or 'Female'.,Sensitive,1,93
+"Indicates whether the individual has undergone hormonal changes, particularly related to menopause. This can be 'Postmenopausal' for females or 'Normal' for individuals who haven't experienced significant hormonal changes.",Not Sensitive,0,87
+Indicates whether there is a family history of osteoporosis or fractures. This can be 'Yes' or 'No'.,Not Sensitive,0,134
+"The race or ethnicity of the individual. This can include categories such as 'Caucasian', 'African American', 'Asian', etc.",Sensitive,1,26
+The body weight status of the individual. This can be 'Normal' or 'Underweight'.,Not Sensitive,0,61
+The level of calcium intake in the individual's diet. This can be 'Low' or 'Adequate'.,Not Sensitive,0,96
+The level of vitamin D intake in the individual's diet. This can be 'Insufficient' or 'Sufficient'.,Not Sensitive,0,96
+Indicates the level of physical activity of the individual. This can be 'Sedentary' for low activity levels or 'Active' for regular exercise.,Not Sensitive,0,90
+Indicates whether the individual is a smoker. This can be 'Yes' or 'No'.,Not Sensitive,0,24
+Indicates the level of alcohol consumption by the individual. This can be 'None' for non-drinkers or 'Moderate' for moderate drinkers.,Not Sensitive,0,218
+"Any existing medical conditions that the individual may have. This can include conditions like 'Rheumatoid Arthritis' or 'Hyperthyroidism', or it can be 'None' if there are no specific medical conditions.",Sensitive,1,241
+Any medications that the individual is currently taking. This can include medications like 'Corticosteroids' or 'None' if no medications are being taken.,Sensitive,1,121
+Indicates whether the individual has previously experienced fractures. This can be 'Yes' or 'No'.,Not Sensitive,0,24
+Represents unique user IDs,Not Sensitive,0,118
+Represents the name of a user,Not Sensitive,0,118
+"Represents the relationship status of a user (Single, available, and so on)",Sensitive,1,128
+"Represents the sexual orientation of a user (gay, bisexual, or straight)",Sensitive,1,85
+Represents if a user likes to drink or not,Not Sensitive,0,118
+Represents if a user consumes drugs or not,Not Sensitive,0,118
+Represents the height of a user in inches,Not Sensitive,0,118
+Represents the profession that a user,Not Sensitive,0,118
+Represents where a user resides,Not Sensitive,0,118
+Represents if a user likes pets or not,Not Sensitive,0,118
+Represents if a user smokes or not,Not Sensitive,0,118
+Represents the languages spoken by a user,Not Sensitive,0,118
+Represents if a user is interested to learn a new language,Not Sensitive,0,69
+Represents the type of body a user has,Not Sensitive,0,118
+Represents the educational level of a user,Not Sensitive,0,118
+Represents if a user dropped out of school or college,Not Sensitive,0,118
+Represents a user's description,Not Sensitive,0,118
+Represents the interests of a user,Not Sensitive,0,118
+Represents other interests of a user,Not Sensitive,0,118
+Represents the preferred location to find a date,Not Sensitive,0,292
+Blacks,Sensitive,1,58
+Black people,Sensitive,1,43
+Black residents,Sensitive,1,120
+Black participants,Sensitive,1,141
+Black,Sensitive,1,113
+Whites,Sensitive,1,195
+White people,Sensitive,1,43
+White residents,Sensitive,1,120
+White participants,Sensitive,1,141
+White,Sensitive,1,36
+Caucasian,Sensitive,1,26
+African,Sensitive,1,18
+Asian,Sensitive,1,1
+Indigenous or Native American,Sensitive,1,29
+Latino Latina Hispanic,Sensitive,1,278
+Name of the county.,Sensitive,1,48
+Name of the state the county belongs to.,Not Sensitive,0,48
+Federal Information Processing Standard (FIPS) code for the state.,Not Sensitive,0,89
+FIPS code for the county.,Not Sensitive,0,48
+"Combined State and County FIPS codes, a unique identifier for each county.",Not Sensitive,0,48
+Total population in the county.,Not Sensitive,0,48
+Number of males in the county.,Not Sensitive,0,48
+Number of females in the county.,Not Sensitive,0,48
+Total race-related responses recorded in the survey.,Not Sensitive,0,284
+Number of individuals identifying as White alone.,Sensitive,1,102
+Number of individuals identifying as Black or African American alone.,Sensitive,1,102
+Number of individuals identifying as Hispanic or Latino.,Sensitive,1,102
+The individual identifies as White.,Sensitive,1,1
+The person is Black or African American.,Sensitive,1,18
+This individual is of Hispanic or Latino descent.,Sensitive,1,278
+The respondent identifies as Asian.,Sensitive,1,1
+The person is Native American or Alaskan Native.,Sensitive,1,29
+The individual is Middle Eastern or North African.,Sensitive,1,70
+The respondent is a Pacific Islander.,Sensitive,1,63
+The person identifies as biracial or multiracial.,Sensitive,1,12
+The individual identifies as White alone.,Sensitive,1,1
+The respondent is Black or African American alone.,Sensitive,1,18
+The individual identifies as Asian alone.,Sensitive,1,1
+The person is Hispanic or Latino alone.,Sensitive,1,278
+The respondent is Native American alone.,Sensitive,1,29
+The individual is of mixed race.,Sensitive,1,109
+The person identifies as Pacific Islander alone.,Sensitive,1,63
+The respondent is biracial.,Sensitive,1,12
+The individual identifies as both Black and White.,Sensitive,1,1
+The person identifies as both Hispanic and White.,Sensitive,1,1
+The respondent identifies as both Asian and Black.,Sensitive,1,1
+The individual has a lighter skin tone.,Sensitive,1,50
+The person has a darker skin tone.,Sensitive,1,50
+The respondent has fair skin.,Sensitive,1,35
+The individual has medium skin tone.,Sensitive,1,50
+The person has deep brown skin.,Sensitive,1,71
+The individual has olive-toned skin.,Sensitive,1,28
+The respondent has very light skin.,Sensitive,1,71
+The person has dark brown skin.,Sensitive,1,71
+The individual has pale skin.,Sensitive,1,28
+The respondent has tan skin.,Sensitive,1,35
+The person has ebony skin tone.,Sensitive,1,50
+The individual has light brown skin.,Sensitive,1,71
+The respondent identifies as biracial with one White parent.,Sensitive,1,12
+The individual identifies as biracial with one Black parent.,Sensitive,1,12
+The person identifies as biracial with one Asian parent.,Sensitive,1,12
+The respondent identifies as biracial with one Hispanic parent.,Sensitive,1,12
+The individual identifies as Caucasian and Asian.,Sensitive,1,1
+The person is of Asian and Pacific Islander descent.,Sensitive,1,63
+The respondent is of African American and Native American descent.,Sensitive,1,29
+The individual identifies as Black and Hispanic.,Sensitive,1,1
+The person identifies as Latino with indigenous ancestry.,Sensitive,1,62
+The respondent identifies as White and Native American.,Sensitive,1,29
+The individual identifies as a first-generation immigrant from Asia.,Sensitive,1,173
+The person identifies as Latino with European ancestry.,Sensitive,1,62
+The individual is of African descent with Caribbean roots.,Sensitive,1,131
+The respondent identifies as a multiracial individual.,Sensitive,1,12
+The person identifies as Asian with East Asian ancestry.,Sensitive,1,1
+The individual is from an indigenous tribe in North America.,Sensitive,1,206
+The person has light skin with African heritage.,Sensitive,1,40
+The individual has medium skin tone with European ancestry.,Sensitive,1,50
+The respondent is of East Asian descent.,Sensitive,1,1
+The person identifies as Filipino.,Sensitive,1,1
+The individual is of Jamaican descent.,Sensitive,1,22
+The respondent is of Dominican descent.,Sensitive,1,4
+The person identifies as Black with French heritage.,Sensitive,1,40
+The individual identifies as a person of mixed Black and Hispanic descent.,Sensitive,1,1
+The respondent identifies as White with Scandinavian roots.,Sensitive,1,99
+The person is biracial with one parent from India.,Sensitive,1,12
+The individual identifies as Asian American.,Sensitive,1,1
+The person identifies as South Asian.,Sensitive,1,1
+The individual identifies as a person of Mexican descent.,Sensitive,1,1
+The respondent is of Puerto Rican descent.,Sensitive,1,4
+The person identifies as a person of Samoan descent.,Sensitive,1,1
+The individual identifies as a person of African American and Caucasian descent.,Sensitive,1,1
+The respondent identifies as a person of Korean descent.,Sensitive,1,1
+The person identifies as Afro-Latino.,Sensitive,1,62
+The individual identifies as a person of African and Asian descent.,Sensitive,1,1
+The respondent identifies as a person of Vietnamese descent.,Sensitive,1,1
+The individual identifies as of Brazilian descent.,Sensitive,1,22
+The person identifies as Native Hawaiian.,Sensitive,1,29
+The respondent identifies as a person of East African descent.,Sensitive,1,1
+The individual is from the Caribbean.,Sensitive,1,131
+The person has skin that is slightly darker than average.,Sensitive,1,50
+The respondent identifies as a person of indigenous South American descent.,Sensitive,1,1
+The person has dark skin and African heritage.,Sensitive,1,40
+The individual is from a family with multiple racial backgrounds.,Sensitive,1,2
+The respondent identifies as African American with European ancestry.,Sensitive,1,62
+The person identifies as a person of Asian and Black descent.,Sensitive,1,1
+The individual identifies as both White and African American.,Sensitive,1,1
+The respondent identifies as having Mediterranean roots.,Sensitive,1,99
+The person has light brown skin with European ancestry.,Sensitive,1,71
+The individual is a person of mixed race and identifies as Latino.,Sensitive,1,109
+The respondent identifies as Black with Southern American roots.,Sensitive,1,99
+The person identifies as part of the Arab or Middle Eastern community.,Sensitive,1,70
+The individual identifies as a person with African American and Asian heritage.,Sensitive,1,1
+The respondent has a fair skin tone but identifies as Hispanic.,Sensitive,1,35
+"The person identifies as a multiracial person of African, European, and Asian descent.",Sensitive,1,1
+The individual identifies as of Indian and African American ancestry.,Sensitive,1,62
+The respondent has medium to dark skin tone.,Sensitive,1,50
+The person identifies as both Hispanic and Asian.,Sensitive,1,1

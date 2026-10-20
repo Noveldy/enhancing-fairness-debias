@@ -1,0 +1,4 @@
+dataset,classifier,metric,value,source,comparable
+adult,random_forest,accuracy,0.85216,"paper section 3.2.3 / Table 7, reference [82]","no: literature-reported, not directly comparable (different splits, preprocessing, and no access to per-fold results)"
+adult,random_forest,precision,0.80246,"paper section 3.2.3 / Table 7, reference [82]","no: literature-reported, not directly comparable (different splits, preprocessing, and no access to per-fold results)"
+bank,decision_tree,roc_auc,0.833,"paper section 3.2.4 / Table 8, reference [83]","no: literature-reported, not directly comparable (different splits, preprocessing, and no access to per-fold results)"

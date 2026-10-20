@@ -1,0 +1,31 @@
+# Tiny run of configs/timeseries.yaml used by tests/test_ts_protocol.py (same code path).
+name: timeseries_smoke
+search_space: configs/search_space_timeseries_smoke.yaml
+memory:
+  per_worker_gb: 1.0
+  main_gb: 2.0
+  reserve_gb: 2.0
+  budget_gb: null
+timeseries_experiments:
+- name: air_quality_smoke
+  dataset: air_quality
+  artificial_gap:
+    start: 2004-11-08 00:00
+    end: 2005-01-01 00:00
+  reference_fill: linear
+  methods:
+  - linear
+  - proposed
+  method_params:
+    proposed:
+      max_passes: 3
+      standardize: false
+  horizons:
+  - 1
+  - 12
+  seeds:
+  - 0
+  folds:
+  - train_end: 2005-03-06 23:00
+    val_end: 2005-03-20 23:00
+    test_end: 2005-04-04 14:00

@@ -1,0 +1,32 @@
+{
+  "script": "scripts/compare_baselines.py",
+  "config": "configs/baselines.yaml",
+  "finished_utc": "2026-10-18T20:08:22+00:00",
+  "n_tabular_tests": 288,
+  "inputs": {
+    "results/raw/baselines/adult_baselines_protected_kept/fold_metrics.csv": "93412fca420f758c6028a0bf578c801d7fb534c512318e067912d3d5e9102912",
+    "results/raw/baselines/adult_baselines_protected_kept/predictions.csv.gz": "e2c27fb1ddad1985e64dcd48b5e6efd181cdc82c589af6c869ac94b05201f987",
+    "results/raw/main/adult_dbim_protected_kept/predictions.csv.gz": "090284110836bbfc61c0d0e5d9046e31ed214b926186b69ef9d6f7142a838568",
+    "results/raw/main/adult_dbim_protected_kept/fold_metrics.csv": "af990827e55e9266966c020f3682c04d0b22e3687ffe79d0871b2855aa552274",
+    "results/raw/baselines/adult_baselines_protected_dropped/fold_metrics.csv": "0df04f2deb793d38bf4c819f3aad1cdc6338f8ac44fb0c3c750ae7202906ffd7",
+    "results/raw/baselines/adult_baselines_protected_dropped/predictions.csv.gz": "02db495a7af2ee9b56908d4faa477a0dc89306bd1252a8074f8ba3a4af15c8ba",
+    "results/raw/main/adult_dbim_protected_dropped/predictions.csv.gz": "158aeffe6fd646ec38c509e6fe0eb40661b697cb42418577ec88d106c98f4854",
+    "results/raw/main/adult_dbim_protected_dropped/fold_metrics.csv": "5ad3780e250b6ef51daff72cdd968ca0cb29f6044e55c9e92ea1aa282e290b56",
+    "results/raw/baselines/bank_baselines_protected_kept/fold_metrics.csv": "878861d2be20ff1e21a8855c5980ac49305fb3f51eed0242bc28b7086ebfbb5a",
+    "results/raw/baselines/bank_baselines_protected_kept/predictions.csv.gz": "ca82179bdf9510f0cbc0a99cb1e9418b687fca05f0f9b541c387f4da84bf500e",
+    "results/raw/main/bank_dbim_protected_kept/predictions.csv.gz": "0019de5186827ac2d8233e9355eee03360ec55808379536d6a036a5cc82369fb",
+    "results/raw/main/bank_dbim_protected_kept/fold_metrics.csv": "53ae65e9a89a57bbf3be9c626dbe3302b71819918ce79122c4b7e8dd6259b408",
+    "results/raw/baselines/bank_baselines_protected_dropped/fold_metrics.csv": "85e25a1914a2c36d614b6fee2015a81e69af42c33aa3d1462bde06db2c1648cd",
+    "results/raw/baselines/bank_baselines_protected_dropped/predictions.csv.gz": "d88811e5c9c4aa611cb180a79342095cf0cf755e3fbe4927e25d2574e4a4db3d",
+    "results/raw/main/bank_dbim_protected_dropped/predictions.csv.gz": "99d3d2521fc5c22358c84ff435925a7b75c83fd89c4b034c2f87fc909c93e27e",
+    "results/raw/main/bank_dbim_protected_dropped/fold_metrics.csv": "897b66aa00861a7dcca8cb559531eefac911e74b89b4f5b6b0f5f7c3d731b2f2",
+    "results/raw/timeseries/air_quality_cleaning/test_metrics.csv": "129bea016a5a5713bfc90bc93e9cae123f53bebd003f947dad4b2aaee2861773",
+    "results/raw/timeseries/air_quality_cleaning/reconstruction.csv": "de059147452337fd75178391200301ec5d29557cd35bd8e9ea3a38de1e8c384e"
+  },
+  "packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0"
+  }
+}

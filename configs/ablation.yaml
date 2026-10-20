@@ -1,0 +1,53 @@
+# Phase 4.3 ablation (revision Phase 4.3; author decision J1: three stages,
+# "full pipeline" = cleaning + resampling). Run with:
+#   venv/bin/python run_experiments.py --config configs/ablation.yaml
+#
+# Stages, all on the same outer folds, seeds, inner CV and classifier grid:
+#   1. original data: complete rows, no resampling   -> results/raw/baselines, method "none" (reused)
+#   2. cleaning only: SimilarityImputer, no resampling -> this config
+#   3. cleaning + resampling (DBIM)                     -> results/raw/main (reused)
+# Only stage 2 is new. It is the DBIM pipeline with the resampler slot left empty;
+# the inner CV chooses the classifier hyperparameters alone.
+name: ablation
+search_space: configs/search_space.yaml
+outer:
+  n_repeats: 5
+  n_splits: 5
+seeds: [0, 1, 2, 3, 4]
+inner:
+  n_splits: 3
+n_jobs: 18            # upper limit on parallel inner-CV fits; the memory guard may lower it
+
+memory:               # same as configs/main.yaml
+  per_worker_gb: 1.0
+  main_gb: 2.0
+  reserve_gb: 2.0
+  budget_gb: null
+
+_adult: &adult
+  dataset: adult
+  variant: full
+  method: impute_only
+  resampling: false
+  classifier: random_forest
+  domain: finance
+  protected: [sex, race]
+  stratify_by: sex
+  drop_features: []
+
+_bank: &bank
+  dataset: bank
+  variant: full
+  method: impute_only
+  resampling: false
+  classifier: decision_tree
+  domain: finance
+  protected: [marital]
+  stratify_by: marital
+  drop_features: [duration]     # F1 (a)
+
+tabular_experiments:
+  - {name: adult_impute_only_protected_kept, protected_as_feature: true, <<: *adult}
+  - {name: adult_impute_only_protected_dropped, protected_as_feature: false, <<: *adult}
+  - {name: bank_impute_only_protected_kept, protected_as_feature: true, <<: *bank}
+  - {name: bank_impute_only_protected_dropped, protected_as_feature: false, <<: *bank}

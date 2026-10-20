@@ -1,0 +1,31 @@
+# Air Quality time-series cleaning experiment (paper §3.2.5, Table 9; author decisions B5, G1).
+#   venv/bin/python run_experiments.py --config configs/timeseries.yaml
+# Needs darts / torch / pytorch-lightning (requirements-timeseries.txt).
+# Size: 3 folds x 5 scenarios x (6 grid points + 5 seeds) = 165 LSTM fits.
+name: timeseries
+search_space: configs/search_space_timeseries.yaml
+
+memory:
+  per_worker_gb: 1.0     # unused here (single process); kept for the shared guard
+  main_gb: 2.0
+  reserve_gb: 2.0
+  budget_gb: null
+
+timeseries_experiments:
+  - name: air_quality_cleaning
+    dataset: air_quality
+    # The paper removes 08/11/2004-31/12/2004. Whole days: [start, end) = 1,296 hourly rows.
+    # (The original code's string comparison removed 2004-11-08 00:00 .. 2004-12-31 00:00, 1,273 rows.)
+    artificial_gap: {start: "2004-11-08 00:00", end: "2005-01-01 00:00"}
+    reference_fill: linear          # natural gaps of the no-artificial-gap reference
+    methods: [mean, linear, spline, proposed]
+    method_params:
+      proposed: {max_passes: 3, standardize: false}   # decisions G2-G3 (REVISION_LOG.md)
+    horizons: [1, 12]               # one step ahead, and 12 h as in the original predict(n=12)
+    seeds: [0, 1, 2, 3, 4]
+    # Expanding-window folds (dates inclusive). The artificial gap lies inside every training period;
+    # validation (2 weeks) drives early stopping and selection; test windows do not overlap.
+    folds:
+      - {train_end: "2005-01-09 23:00", val_end: "2005-01-23 23:00", test_end: "2005-02-20 23:00"}
+      - {train_end: "2005-02-06 23:00", val_end: "2005-02-20 23:00", test_end: "2005-03-20 23:00"}
+      - {train_end: "2005-03-06 23:00", val_end: "2005-03-20 23:00", test_end: "2005-04-04 14:00"}

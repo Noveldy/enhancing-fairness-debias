@@ -1,0 +1,46 @@
+# Tiny end-to-end baseline run used by tests/test_baselines.py.
+name: baselines_smoke
+search_space: configs/search_space_smoke.yaml
+outer:
+  n_repeats: 1
+  n_splits: 2
+seeds: [0]
+inner:
+  n_splits: 2
+n_jobs: 2
+memory:
+  per_worker_gb: 1.2
+  main_gb: 2.0
+  reserve_gb: 2.0
+  budget_gb: null
+baselines:
+  constraint: demographic_parity
+  eg_eps: 0.01
+  eg_max_iter: 5
+  eg_classifier_threads: 2
+  dir_repair_level: 1.0
+baseline_experiments:
+  - name: adult_baselines_smoke
+    dataset: adult
+    variant: full
+    subsample: 2000
+    classifier: random_forest
+    domain: finance
+    protected: [sex, race]
+    stratify_by: sex
+    protected_as_feature: true
+    drop_features: []
+    mitigate: [sex]
+    methods: [none, random_over, random_under, smote, reweighing, dir, exp_gradient, threshold_opt]
+  - name: bank_baselines_smoke
+    dataset: bank
+    variant: full
+    subsample: 2000
+    classifier: decision_tree
+    domain: finance
+    protected: [marital]
+    stratify_by: marital
+    protected_as_feature: false
+    drop_features: [duration]
+    mitigate: [marital]
+    methods: [none, smote, reweighing, dir, exp_gradient, threshold_opt]

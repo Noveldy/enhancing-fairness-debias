@@ -1,0 +1,33 @@
+method,dataset,n,n_sensitive,accuracy,precision,recall,f1,false_positives,false_negatives
+bert seed 0,all,52,10,0.8461538461538461,0.75,0.3,0.42857142857142855,occupation,age;race;native-country;age;personal_status_and_sex;age_in_years;foreign_worker
+bert seed 0,adult,14,5,0.7142857142857143,0.6666666666666666,0.4,0.5,occupation,age;race;native-country
+bert seed 0,bank,17,2,0.9411764705882353,1.0,0.5,0.6666666666666666,,age
+bert seed 0,german,21,3,0.8571428571428571,0.0,0.0,0.0,,personal_status_and_sex;age_in_years;foreign_worker
+bert seed 1,all,52,10,0.8846153846153846,0.75,0.6,0.6666666666666666,occupation;purpose,race;native-country;age;personal_status_and_sex
+bert seed 1,adult,14,5,0.7857142857142857,0.75,0.6,0.6666666666666666,occupation,race;native-country
+bert seed 1,bank,17,2,0.9411764705882353,1.0,0.5,0.6666666666666666,,age
+bert seed 1,german,21,3,0.9047619047619048,0.6666666666666666,0.6666666666666666,0.6666666666666666,purpose,personal_status_and_sex
+bert seed 2,all,52,10,0.8846153846153846,0.8333333333333334,0.5,0.625,occupation,race;native-country;age;personal_status_and_sex;foreign_worker
+bert seed 2,adult,14,5,0.7857142857142857,0.75,0.6,0.6666666666666666,occupation,race;native-country
+bert seed 2,bank,17,2,0.9411764705882353,1.0,0.5,0.6666666666666666,,age
+bert seed 2,german,21,3,0.9047619047619048,1.0,0.3333333333333333,0.5,,personal_status_and_sex;foreign_worker
+bert seed 3,all,52,10,0.9230769230769231,1.0,0.6,0.75,,race;native-country;age;foreign_worker
+bert seed 3,adult,14,5,0.8571428571428571,1.0,0.6,0.75,,race;native-country
+bert seed 3,bank,17,2,0.9411764705882353,1.0,0.5,0.6666666666666666,,age
+bert seed 3,german,21,3,0.9523809523809523,1.0,0.6666666666666666,0.8,,foreign_worker
+bert seed 4,all,52,10,0.8846153846153846,0.8333333333333334,0.5,0.625,occupation,race;native-country;age;personal_status_and_sex;foreign_worker
+bert seed 4,adult,14,5,0.7857142857142857,0.75,0.6,0.6666666666666666,occupation,race;native-country
+bert seed 4,bank,17,2,0.9411764705882353,1.0,0.5,0.6666666666666666,,age
+bert seed 4,german,21,3,0.9047619047619048,1.0,0.3333333333333333,0.5,,personal_status_and_sex;foreign_worker
+bert majority vote,all,52,10,0.8846153846153846,0.8333333333333334,0.5,0.625,occupation,race;native-country;age;personal_status_and_sex;foreign_worker
+bert majority vote,adult,14,5,0.7857142857142857,0.75,0.6,0.6666666666666666,occupation,race;native-country
+bert majority vote,bank,17,2,0.9411764705882353,1.0,0.5,0.6666666666666666,,age
+bert majority vote,german,21,3,0.9047619047619048,1.0,0.3333333333333333,0.5,,personal_status_and_sex;foreign_worker
+keyword on column name,all,52,10,0.9038461538461539,0.8571428571428571,0.6,0.7058823529411765,installment_rate_in_percentage_of_disposable_income,marital-status;native-country;marital;foreign_worker
+keyword on column name,adult,14,5,0.8571428571428571,1.0,0.6,0.75,,marital-status;native-country
+keyword on column name,bank,17,2,0.9411764705882353,1.0,0.5,0.6666666666666666,,marital
+keyword on column name,german,21,3,0.9047619047619048,0.6666666666666666,0.6666666666666666,0.6666666666666666,installment_rate_in_percentage_of_disposable_income,foreign_worker
+checkpoint-830 (reference),all,52,10,0.9230769230769231,1.0,0.6,0.75,,race;native-country;age;foreign_worker
+checkpoint-830 (reference),adult,14,5,0.8571428571428571,1.0,0.6,0.75,,race;native-country
+checkpoint-830 (reference),bank,17,2,0.9411764705882353,1.0,0.5,0.6666666666666666,,age
+checkpoint-830 (reference),german,21,3,0.9523809523809523,1.0,0.6666666666666666,0.8,,foreign_worker

@@ -1,0 +1,14 @@
+# Tiny LSTM grid for tests/test_ts_protocol.py (code path check only, not results).
+lstm:
+  selection_seed: 0
+  grid:
+    lr: [1.0e-3]
+    input_chunk_length: [7]
+  training:
+    max_epochs: 2
+    patience: 1
+    min_delta: 0.0
+    batch_size: 256
+    hidden_dim: 8
+    training_length: 24
+    torch_threads: 2

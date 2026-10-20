@@ -1,0 +1,180 @@
+{
+  "experiment": {
+    "name": "bank_synthetic",
+    "dataset": "bank",
+    "variant": "full",
+    "classifier": "decision_tree",
+    "domain": "finance",
+    "protected": [
+      "marital"
+    ],
+    "stratify_by": "marital",
+    "condition_on": "marital",
+    "protected_as_feature": true,
+    "drop_features": [
+      "duration"
+    ],
+    "hyperparams": {
+      "protected_kept": "baselines/bank_baselines_protected_kept",
+      "protected_dropped": "baselines/bank_baselines_protected_dropped"
+    }
+  },
+  "config_file": "configs/synthetic.yaml",
+  "config": {
+    "name": "synthetic",
+    "search_space": "configs/search_space.yaml",
+    "outer": {
+      "n_repeats": 5,
+      "n_splits": 5
+    },
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "inner": {
+      "n_splits": 3
+    },
+    "n_jobs": 18,
+    "memory": {
+      "per_worker_gb": 1.5,
+      "main_gb": 2.0,
+      "reserve_gb": 2.0,
+      "budget_gb": null
+    },
+    "synthetic": {
+      "generators": [
+        "marginal_sampler",
+        "independent_marginals",
+        "gaussian_copula"
+      ],
+      "privacy_n_query": 2000,
+      "subgroup_min_rows": {
+        "metrics": 50,
+        "c2st": 200
+      }
+    }
+  },
+  "search_space": {
+    "resamplers": {
+      "oversampling": [
+        "SMOTE",
+        "ADASYN",
+        "BorderlineSMOTE",
+        "KMeansSMOTE",
+        "SVMSMOTE"
+      ],
+      "undersampling": [
+        "CondensedNearestNeighbour",
+        "AllKNN",
+        "NeighbourhoodCleaningRule",
+        "OneSidedSelection",
+        "TomekLinks"
+      ],
+      "large_training_rows": 20000,
+      "excluded_when_large": [
+        "SVMSMOTE",
+        "CondensedNearestNeighbour"
+      ]
+    },
+    "imbalance_threshold_pct": 40,
+    "classifiers": {
+      "random_forest": {
+        "n_estimators": [
+          100,
+          300
+        ],
+        "max_depth": [
+          null,
+          10,
+          20
+        ],
+        "min_samples_leaf": [
+          1,
+          5
+        ]
+      },
+      "decision_tree": {
+        "max_depth": [
+          null,
+          5,
+          10,
+          20
+        ],
+        "min_samples_leaf": [
+          1,
+          5,
+          20
+        ]
+      }
+    },
+    "selection_metric": {
+      "default": "accuracy",
+      "healthcare": "f1_weighted"
+    }
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "data": {
+    "bank": {
+      "file": "bank_marketing.csv",
+      "sha256": "592cda3d5f6b704f0ce23477e8375acf2301460efe76cd192e2a789325ccdc13"
+    }
+  },
+  "started_utc": "2026-10-20T07:56:04+00:00",
+  "finished_utc": "2026-10-20T08:01:32+00:00",
+  "wall_clock_seconds": 328.2,
+  "summary": {
+    "experiment": "bank_synthetic",
+    "wall_clock_seconds": 327.9,
+    "n_rows": 45211,
+    "n_complete_rows": 43193,
+    "n_folds": 25,
+    "generators": [
+      "marginal_sampler",
+      "independent_marginals",
+      "gaussian_copula"
+    ],
+    "n_jobs": 5,
+    "memory_guard": {
+      "per_worker_gb": 1.5,
+      "main_gb": 2.0,
+      "reserve_gb": 2.0,
+      "budget_gb": 9.6
+    },
+    "peak_memory_gb": 1.82
+  },
+  "environment": {
+    "python": "3.12.3",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.5",
+      "scipy": "1.18.0",
+      "scikit-learn": "1.9.0",
+      "imbalanced-learn": "0.14.2",
+      "joblib": "1.5.3",
+      "pyyaml": "6.0.3",
+      "torch": "2.13.0+cpu",
+      "darts": "0.46.1",
+      "pytorch-lightning": "2.6.5",
+      "fairlearn": "0.12.0",
+      "aif360": "0.6.1",
+      "BlackBoxAuditing": "0.1.54",
+      "plotly": "5.24.1",
+      "rstr": "3.2.2"
+    },
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+    "cpu": "Intel(R) Core(TM) i5-14500",
+    "logical_cpus": 20,
+    "ram_gb": 14.6,
+    "git_commit": "f0d198816a9ab6d7f6dc4e25c19026efa8a11b6d",
+    "git_dirty": false
+  }
+}

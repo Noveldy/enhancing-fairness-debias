@@ -1,0 +1,18 @@
+# Reduced search space for the smoke test only. Not used for any reported result.
+resamplers:
+  oversampling: [SMOTE, KMeansSMOTE]
+  undersampling: [TomekLinks, AllKNN]
+  large_training_rows: 20000
+  excluded_when_large: [SVMSMOTE, CondensedNearestNeighbour]
+imbalance_threshold_pct: 40
+classifiers:
+  random_forest:
+    n_estimators: [50]
+    max_depth: [null, 10]
+    min_samples_leaf: [1]
+  decision_tree:
+    max_depth: [null, 5]
+    min_samples_leaf: [1]
+selection_metric:
+  default: accuracy
+  healthcare: f1_weighted

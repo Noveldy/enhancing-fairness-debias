@@ -1,0 +1,9 @@
+2026-10-20 10:42:50,490 INFO oom_score_adj=1000: if memory runs out, the kernel stops this run before other applications
+2026-10-20 10:42:51,028 WARNING adult_synthetic (folds in parallel): n_jobs capped 18 -> 5 (free 11.3 GB + this run 0.2 GB, reserve 2.0 GB, est. 1.50 GB/worker + 2.0 GB main)
+2026-10-20 10:42:51,028 INFO adult_synthetic: 48842 rows, 45222 complete, 25 folds, generators ['marginal_sampler', 'independent_marginals', 'gaussian_copula'], n_jobs 5
+2026-10-20 10:55:55,890 INFO adult_synthetic: 25 folds in 785 s, peak 1.9 GB
+2026-10-20 10:56:04,503 INFO finished adult_synthetic in 794 s
+2026-10-20 10:56:04,712 WARNING bank_synthetic (folds in parallel): n_jobs capped 18 -> 5 (free 9.8 GB + this run 1.8 GB, reserve 2.0 GB, est. 1.50 GB/worker + 2.0 GB main)
+2026-10-20 10:56:04,712 INFO bank_synthetic: 45211 rows, 43193 complete, 25 folds, generators ['marginal_sampler', 'independent_marginals', 'gaussian_copula'], n_jobs 5
+2026-10-20 11:01:26,972 INFO bank_synthetic: 25 folds in 322 s, peak 1.8 GB
+2026-10-20 11:01:32,663 INFO finished bank_synthetic in 328 s

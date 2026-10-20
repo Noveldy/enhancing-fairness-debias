@@ -1,0 +1,6 @@
+# Phase 3 fairness baselines. Install on top of requirements-dev.txt:
+#   venv/bin/pip install -r requirements-baselines.txt
+# fairlearn 0.12.0 is the version pinned in the original requirements.txt; aif360 was listed there unpinned.
+fairlearn==0.12.0
+aif360==0.6.1
+BlackBoxAuditing==0.1.54   # needed by aif360's DisparateImpactRemover (used to verify experiments/fair_baselines.py)
