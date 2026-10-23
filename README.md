@@ -4,7 +4,7 @@ Back end of the DEBIAS toolkit and the complete, reproducible evaluation behind 
 **"Enhancing Fairness: A Cross-Platform Application for Mitigating Bias in Data Ecosystems"**
 (Array, ARRAY-D-26-05264). The Flutter front end lives in a separate repository.
 
-This branch (`release`) holds the revised code, every raw and summary output, and a log that maps each change
+This branch (`main`) holds the revised code, every raw and summary output, and a log that maps each change
 to a reviewer comment. The code and results behind the **submitted** manuscript are kept unchanged under
 `legacy/` for comparison.
 
