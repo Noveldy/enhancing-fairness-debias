@@ -10,6 +10,5 @@
     {"name": "Mavrogiorgou, Argyro", "affiliation": "University of Piraeus", "orcid": "0000-0002-1543-5627"},
     {"name": "Kyriazis, Dimosthenis", "affiliation": "University of Piraeus", "orcid": "0000-0001-7019-7214"}
   ],
-  "keywords": ["fairness", "data bias", "resampling", "synthetic data", "sensitive attributes"],
-  "grants": [{"id": "10.13039/501100000780::101249596"}, {"id": "10.13039/501100000780::101135209"}]
+  "keywords": ["fairness", "data bias", "resampling", "synthetic data", "sensitive attributes"]
 }
