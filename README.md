@@ -13,7 +13,7 @@ to a reviewer comment. The code and results behind the **submitted** manuscript 
 Requirements: Linux, Python 3.12 (tested with 3.12.3), about 3 GB of disk space for the environment.
 
 ```bash
-git clone https://github.com/Noveldy/enhancing-fairness.git && cd enhancing-fairness && git checkout release
+git clone https://github.com/Noveldy/enhancing-fairness-debias.git && cd enhancing-fairness && git checkout release
 make env       # venv/ from requirements-lock.txt (CPU-only torch)
 make test      # test suite, about 1 minute
 make verify    # rebuild every table, figure and LaTeX table from the saved raw outputs and
