@@ -1,0 +1,116 @@
+{
+  "script": "results/revision_airquality_fsdg/run_airquality_fsdg.py",
+  "script_sha256": "06a90c9fcd4c17c99c3d84e09944f3ba5e1d50f613efe012d62a3d319c64727f",
+  "started_utc": "2026-10-27T10:35:29+00:00",
+  "finished_utc": "2026-10-27T10:37:51+00:00",
+  "wall_clock_seconds": 142.0,
+  "stage_seconds": {
+    "load": 0.072,
+    "clean": 0.625,
+    "construct value functions": 0.062,
+    "store and load": 0.282,
+    "generate seed 0": 27.322,
+    "generate seed 1": 28.359,
+    "generate seed 2": 28.026,
+    "generate seed 3": 27.528,
+    "generate seed 4": 28.32,
+    "metrics and tables": 0.15,
+    "legacy check": 0.068,
+    "figures": 1.06
+  },
+  "generation_seconds_per_seed": {
+    "0": 26.37,
+    "1": 27.29,
+    "2": 27.09,
+    "3": 26.57,
+    "4": 27.28
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "top_n": 5,
+  "cleaning": {
+    "method": "proposed",
+    "params": {
+      "max_passes": 3,
+      "standardize": false
+    },
+    "source": "configs/timeseries.yaml",
+    "seconds": 0.596
+  },
+  "hmac_key": {
+    "value": "revision-airquality-fsdg-demonstration-key",
+    "note": "fixed demonstration key, not a secret"
+  },
+  "datasets": {
+    "air_quality.csv": "d8196847f231fc141ba16c1376aeb90d747a95353203e20ca3b4ae135438157d",
+    "adult.csv": "7bf09a7484d84f92c7e69582078bb01b2f7c4862c8fb27990c0dd848a8a029f4"
+  },
+  "inputs": {
+    "configs/timeseries.yaml": "7bf62bae241353eb7b4be9ee13b4082ef401e16cfae4c12b32e2415b78d133b5",
+    "requirements-lock.txt": "1e01ab075bf39c79de07d120ee8c3ec7b28f01be1e921be89196c37c62270a8d",
+    "legacy/original/bias_mitigation/synthetic_data/value_functions.py": "fbc0878d7f370e3717962140918f4e762b72b243fbc219cca26386f925d1e373",
+    "results/summary/synthetic_data_description.csv": "ad7089ecb69a86ba5dc7693f1809ffe2e65bc86c97dd0a142e9603e9d92aac79"
+  },
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+    "cpu_count": 8,
+    "locked_packages": 90,
+    "lock_mismatches": [],
+    "key_packages": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.5",
+      "scipy": "1.18.0",
+      "matplotlib": "3.11.2",
+      "PyYAML": "6.0.3",
+      "Flask": "3.1.3",
+      "rstr": "3.2.2",
+      "plotly": "5.24.1"
+    },
+    "docker_image": "c686d17de835",
+    "image_git_commit": "8b0079f706502be0507527b76d7e9632ffe8e573",
+    "host_git_commit": "8b0079f706502be0507527b76d7e9632ffe8e573",
+    "host_git_status_porcelain": "?? results/revision_airquality_fsdg/;"
+  },
+  "outputs_sha256": {
+    "LOOKUPS.md": "94c18011a404117f83c76f69ddeae7d93480b41790d4de6af7ec142b60416010",
+    "RESULTS.md": "a5873235bd6a743eccbbafb93d0503a54ace622108aea89214f7569be155cbbe",
+    "airquality_schema.json": "9daa1a142e541c15bb6bb78a30bd60c0fc7ac65d48c1ee5ad24d2dea2534634e",
+    "cleaning_donor_log.csv": "9e7f038a4807496b743bc2dca1d5f1966f3ae6626074811ab4e30b426c734090",
+    "fig15_adult_schema.json": "064197bb8785ced5c14c27f8ef144dc77897ce4d72d14b439210afaab252c168",
+    "fig15_adult_schema.png": "a38fd16ac39e3362e3ac21f35715b470958b7034509c28d666ecaa415b3a0176",
+    "fig15_adult_schema.txt": "18daa3b6b974543a0c7e241476307bd31e64a051e9982f96144337a784c51e59",
+    "fig16_value_functions_CO_T.png": "07a273de6accf0df46067ca0c4342f841cc81e424f68ac80fb43c0a1e8fe87b3",
+    "fig16_value_functions_CO_T.txt": "c5c7fbcb285822d1dc065a751cf4363c7501f09be18876c53e6642396def3e77",
+    "fig6_flat_random.json": "922e499833aa66370d526550ba1b25aa9a849807b41f0f780037e41908770f65",
+    "fig6_flat_random.png": "fe399df15d1677f14160d2be4c2eef5cdf38bf93ffd62db691b513aa980e6229",
+    "legacy_check.csv": "767d25cfec2858cc3465126b9699a7a9378b09d57ddad91588c4898fc62d4137",
+    "lookups_compute.py": "45dc8e4afc95ef3131a0e00805accf50e46eae9ff0d181b3ff606e143f3e9173",
+    "lookups_computed.json": "7cecac82f51f7e34f20563c6627d5e9c8516d3606ee6cd0b97a3487a42869e9c",
+    "lookups_computed.md": "aa5ab879ad0d3c21723c2d770eb23b853548ee065e7bbae9bac56283429bea37",
+    "lookups_dbim_vs_none_tests.csv": "0e2c5e7f13d5c7f380480f6b868a0086928b9a63c668cce60546516c9ce87aff",
+    "metrics_per_seed.csv": "2314b66b49c3489d617b09ea9b9babbd09b0a90da76829227a9fad834954fb46",
+    "negative_share_concentrations.csv": "eef18bc6899bf33de8f5333e4dec9e56879cc02ee47d9064e07c363b33b068df",
+    "run_airquality_fsdg.py": "06a90c9fcd4c17c99c3d84e09944f3ba5e1d50f613efe012d62a3d319c64727f",
+    "table25_airquality_fsdg.csv": "3773450c1bc4250db8eae40edcf02010cec36d151639dc09289db5e7811fca98",
+    "table25_airquality_fsdg.md": "efd4e3ea99a1d6021f0d56cdee0af85caedad689dcf50484fd060ad629c667c1",
+    "value_function_summary.csv": "14c6f13ecb96ef12eff04e3f5a780834de7662c8e353ea75b03d4a4a474c932b",
+    "value_functions/aq_AH.json": "93820b40bf393117d6ca2fca1e0a6966fb7a44fc7fc4fb0f6de8aad56ccf7155",
+    "value_functions/aq_C6H6_GT.json": "6f09ba616a347d3742e691a8fda4c9318c44e2a7c207daec588930bb89ea410d",
+    "value_functions/aq_CO_GT.json": "e090519c4e487ede052289dcc2bf0984513727549c85de8940c02138d3723d93",
+    "value_functions/aq_NO2_GT.json": "c8abc87371e6edf7609d98afe6af220ace9cde6b6400f47385b68abf1a553d58",
+    "value_functions/aq_NOx_GT.json": "c37df0efd05c74d4b1cc8835d5d68825da442c1374180c5d962867ebbc99917d",
+    "value_functions/aq_PT08_S1_CO.json": "f5715212de52742dafa68351815c2865d856283f2d45ac23b7063ece54ed6278",
+    "value_functions/aq_PT08_S2_NMHC.json": "33ffd447c11545799993094ae207865380a934c603e88a05cdfd19065b108df2",
+    "value_functions/aq_PT08_S3_NOx.json": "6eb6cc2ae5074c04b5289631858be2a16f258ada1ca14ad6d25cc21d54c0a368",
+    "value_functions/aq_PT08_S4_NO2.json": "501dfddb8e910b20c66f9573320b5a3a8132538b6dd0b774fc0efb1d3659820f",
+    "value_functions/aq_PT08_S5_O3.json": "de59ea20c759c974d9124fb5cb6fb0eff62c673426c4d94eae50f3d382dcdb6b",
+    "value_functions/aq_RH.json": "1219877228deb2553d79c5d46a57acf8e8632a078faabe73f5701608474f4fab",
+    "value_functions/aq_T.json": "29204e9a285e9fca247c6da4ffbc196cc0c744e67556e897d30baaae5db413d4"
+  }
+}

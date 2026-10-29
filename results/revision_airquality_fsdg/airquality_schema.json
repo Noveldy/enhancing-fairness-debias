@@ -1,0 +1,138 @@
+{
+  "record_id": {
+    "type": "id",
+    "prefix": "AQ"
+  },
+  "CO(GT)": {
+    "type": "timeseries",
+    "entity_col": "record_id",
+    "start": "2004-03-10 18:00:00",
+    "periods": 9357,
+    "freq": "h",
+    "value_func": {
+      "name": "aq_CO_GT",
+      "params": {}
+    }
+  },
+  "PT08.S1(CO)": {
+    "type": "timeseries",
+    "entity_col": "record_id",
+    "start": "2004-03-10 18:00:00",
+    "periods": 9357,
+    "freq": "h",
+    "value_func": {
+      "name": "aq_PT08_S1_CO",
+      "params": {}
+    }
+  },
+  "C6H6(GT)": {
+    "type": "timeseries",
+    "entity_col": "record_id",
+    "start": "2004-03-10 18:00:00",
+    "periods": 9357,
+    "freq": "h",
+    "value_func": {
+      "name": "aq_C6H6_GT",
+      "params": {}
+    }
+  },
+  "PT08.S2(NMHC)": {
+    "type": "timeseries",
+    "entity_col": "record_id",
+    "start": "2004-03-10 18:00:00",
+    "periods": 9357,
+    "freq": "h",
+    "value_func": {
+      "name": "aq_PT08_S2_NMHC",
+      "params": {}
+    }
+  },
+  "NOx(GT)": {
+    "type": "timeseries",
+    "entity_col": "record_id",
+    "start": "2004-03-10 18:00:00",
+    "periods": 9357,
+    "freq": "h",
+    "value_func": {
+      "name": "aq_NOx_GT",
+      "params": {}
+    }
+  },
+  "PT08.S3(NOx)": {
+    "type": "timeseries",
+    "entity_col": "record_id",
+    "start": "2004-03-10 18:00:00",
+    "periods": 9357,
+    "freq": "h",
+    "value_func": {
+      "name": "aq_PT08_S3_NOx",
+      "params": {}
+    }
+  },
+  "NO2(GT)": {
+    "type": "timeseries",
+    "entity_col": "record_id",
+    "start": "2004-03-10 18:00:00",
+    "periods": 9357,
+    "freq": "h",
+    "value_func": {
+      "name": "aq_NO2_GT",
+      "params": {}
+    }
+  },
+  "PT08.S4(NO2)": {
+    "type": "timeseries",
+    "entity_col": "record_id",
+    "start": "2004-03-10 18:00:00",
+    "periods": 9357,
+    "freq": "h",
+    "value_func": {
+      "name": "aq_PT08_S4_NO2",
+      "params": {}
+    }
+  },
+  "PT08.S5(O3)": {
+    "type": "timeseries",
+    "entity_col": "record_id",
+    "start": "2004-03-10 18:00:00",
+    "periods": 9357,
+    "freq": "h",
+    "value_func": {
+      "name": "aq_PT08_S5_O3",
+      "params": {}
+    }
+  },
+  "T": {
+    "type": "timeseries",
+    "entity_col": "record_id",
+    "start": "2004-03-10 18:00:00",
+    "periods": 9357,
+    "freq": "h",
+    "value_func": {
+      "name": "aq_T",
+      "params": {}
+    }
+  },
+  "RH": {
+    "type": "timeseries",
+    "entity_col": "record_id",
+    "start": "2004-03-10 18:00:00",
+    "periods": 9357,
+    "freq": "h",
+    "value_func": {
+      "name": "aq_RH",
+      "params": {}
+    }
+  },
+  "AH": {
+    "type": "timeseries",
+    "entity_col": "record_id",
+    "start": "2004-03-10 18:00:00",
+    "periods": 9357,
+    "freq": "h",
+    "value_func": {
+      "name": "aq_AH",
+      "params": {}
+    }
+  }
+}

@@ -1,0 +1,92 @@
+10:35:29 Air Quality FSDG rerun; output folder /repo/results/revision_airquality_fsdg
+10:35:29 Python 3.12.3; 90 locked packages, 0 mismatches
+10:35:29 == load
+10:35:29 9357 rows x 12 columns, 2004-03-10 18:00:00 to 2005-04-04 14:00:00; missing cells 8258
+10:35:29    load: 0.07 s
+10:35:29 == clean
+10:35:30 proposed cleaning ({'max_passes': 3, 'standardize': False}): 0.60 s; routes:
+ passes                        route  count  sum
+      1                 donor window   1014 7579
+      1 donor window, partly missing      5  679
+      2                 donor window      6    6
+10:35:30 checks passed: no -200 value, no NMHC(GT) column, no missing value, observed values unchanged
+10:35:30    clean: 0.62 s
+10:35:30 == construct value functions
+10:35:30 CO(GT)         a0=    2.0907 (observed mean     2.1527)  s=   1.2344  R2=0.263  periods(h)=24.0, 12.0, 4678.5, 167.1, 9357.0
+10:35:30 PT08.S1(CO)    a0= 1100.3946 (observed mean  1099.8332)  s= 184.8833  R2=0.270  periods(h)=24.0, 12.0, 4678.5, 9357.0, 167.1
+10:35:30 C6H6(GT)       a0=   10.0458 (observed mean    10.0831)  s=   6.1442  R2=0.312  periods(h)=24.0, 12.0, 167.1, 4678.5, 28.0
+10:35:30 PT08.S2(NMHC)  a0=  937.9535 (observed mean   939.1534)  s= 214.2901  R2=0.351  periods(h)=24.0, 12.0, 167.1, 4678.5, 28.0
+10:35:30 NOx(GT)        a0=  246.6112 (observed mean   246.8967)  s= 160.8917  R2=0.392  periods(h)=9357.0, 24.0, 12.0, 24.1, 12.0
+10:35:30 PT08.S3(NOx)   a0=  833.8439 (observed mean   835.4936)  s= 217.6600  R2=0.274  periods(h)=24.0, 12.0, 9357.0, 1871.4, 167.1
+10:35:30 NO2(GT)        a0=  112.7460 (observed mean   113.0913)  s=  37.2658  R2=0.390  periods(h)=24.0, 9357.0, 12.0, 4678.5, 1871.4
+10:35:30 PT08.S4(NO2)   a0= 1451.8461 (observed mean  1456.2646)  s= 248.0347  R2=0.487  periods(h)=9357.0, 4678.5, 12.0, 24.0, 167.1
+10:35:30 PT08.S5(O3)    a0= 1024.9136 (observed mean  1022.9061)  s= 352.0132  R2=0.217  periods(h)=12.0, 24.0, 9357.0, 167.1, 668.4
+10:35:30 T              a0=   18.1404 (observed mean    18.3178)  s=   3.6824  R2=0.825  periods(h)=9357.0, 24.0, 3119.0, 24.1, 4678.5
+10:35:30 RH             a0=   49.5474 (observed mean    49.2342)  s=  12.3030  R2=0.495  periods(h)=24.0, 9357.0, 4678.5, 550.4, 1039.7
+10:35:30 AH             a0=    1.0219 (observed mean     1.0255)  s=   0.2392  R2=0.650  periods(h)=9357.0, 1871.4, 4678.5, 935.7, 1336.7
+10:35:30    construct value functions: 0.06 s
+10:35:30 == store and load
+10:35:30 stored 12 records (sha256 + HMAC); refresh_value_functions accepted all, rejected 0
+10:35:30    store and load: 0.28 s
+10:35:30 == generate seed 0
+10:35:57 seed 0: 9357 x 12 generated in 26.4 s; matches the expressions (max rel. diff 0.0e+00)
+10:35:57    generate seed 0: 27.32 s
+10:35:57 == generate seed 1
+10:36:26 seed 1: 9357 x 12 generated in 27.3 s; matches the expressions (max rel. diff 0.0e+00)
+10:36:26    generate seed 1: 28.36 s
+10:36:26 == generate seed 2
+10:36:54 seed 2: 9357 x 12 generated in 27.1 s; matches the expressions (max rel. diff 0.0e+00)
+10:36:54    generate seed 2: 28.03 s
+10:36:54 == generate seed 3
+10:37:21 seed 3: 9357 x 12 generated in 26.6 s; matches the expressions (max rel. diff 0.0e+00)
+10:37:21    generate seed 3: 27.53 s
+10:37:21 == generate seed 4
+10:37:50 seed 4: 9357 x 12 generated in 27.3 s; matches the expressions (max rel. diff 0.0e+00)
+10:37:50    generate seed 4: 28.32 s
+10:37:50 == metrics and tables
+10:37:50 
+| Feature | KS (mean ± SD) | Wasserstein (mean ± SD) | real min-max | synthetic min-max |
+|---|---|---|---|---|
+| CO(GT) (mg/m³) | 0.101 ± 0.004 | 0.315 ± 0.006 | 0.1 – 11.9 | -4.1 – 7.7 |
+| PT08.S1(CO) (sensor response) | 0.077 ± 0.002 | 35.7 ± 0.7 | 647 – 2040 | 153 – 2092 |
+| C6H6(GT) (µg/m³) | 0.106 ± 0.003 | 1.75 ± 0.03 | 0.1 – 63.7 | -22.8 – 41.4 |
+| PT08.S2(NMHC) (sensor response) | 0.053 ± 0.003 | 31.7 ± 1.1 | 383 – 2214 | -292 – 2002 |
+| NOx(GT) (ppb) | 0.136 ± 0.004 | 63.5 ± 1.3 | 2 – 1479 | -540 – 1107 |
+| PT08.S3(NOx) (sensor response) | 0.056 ± 0.005 | 33.0 ± 1.5 | 322 – 2683 | -191 – 1866 |
+| NO2(GT) (µg/m³) | 0.046 ± 0.003 | 4.90 ± 0.17 | 2 – 340 | -77 – 301 |
+| PT08.S4(NO2) (sensor response) | 0.024 ± 0.003 | 18.3 ± 1.1 | 551 – 2775 | 36 – 2664 |
+| PT08.S5(O3) (sensor response) | 0.068 ± 0.006 | 52.0 ± 3.1 | 221 – 2523 | -571 – 2663 |
+| T (°C) | 0.020 ± 0.003 | 0.305 ± 0.040 | -1.9 – 44.6 | -7.6 – 46.7 |
+| RH (%) | 0.036 ± 0.002 | 1.20 ± 0.03 | 9.2 – 88.7 | -17.7 – 115.3 |
+| AH (absolute humidity, unit not stated by UCI) | 0.032 ± 0.003 | 0.0225 ± 0.0015 | 0.1847 – 2.2310 | -0.3871 – 2.4156 |
+| Mean over the 12 columns | 0.063 ± 0.001 | – | – | – |
+10:37:50 mean KS over the 12 columns: 0.0629 ± 0.0006 (SD over seeds)
+10:37:50 negative synthetic values, CO(GT): 7.66% ± 0.25% (real: 0.00%)
+10:37:50 negative synthetic values, C6H6(GT): 8.82% ± 0.30% (real: 0.00%)
+10:37:50 negative synthetic values, NOx(GT): 11.48% ± 0.34% (real: 0.00%)
+10:37:50 negative synthetic values, NO2(GT): 0.87% ± 0.13% (real: 0.00%)
+10:37:50    metrics and tables: 0.15 s
+10:37:50 == legacy check
+10:37:50 
+       column  n_minus200  raw_mean_incl_minus200  observed_mean  legacy_intercept_stored  intercept_matches_6dp  components_match_6dp  legacy_noise_sd_stored  legacy_rule_residual_sd
+       CO(GT)        1683              -34.207524       2.152750               -34.207524                   True                  True                    84.0                84.188039
+  PT08.S1(CO)         366             1048.990061    1099.833166              1048.990061                   True                  True                   356.0               356.566724
+     NMHC(GT)        8443             -159.090093     218.811816              -159.090093                   True                  True                     NaN               170.300142
+     C6H6(GT)         366                1.865683      10.083105                 1.865683                   True                  True                    44.0                44.156202
+PT08.S2(NMHC)         366              894.595276     939.153376               894.595276                   True                  True                   378.0               378.234661
+      NOx(GT)        1639              168.616971     246.896735               168.616971                   True                  True                   300.0               300.135562
+ PT08.S3(NOx)         366              794.990168     835.493605               794.990168                   True                  True                   353.0               353.521939
+      NO2(GT)        1642               58.148873     113.091251                58.148873                   True                  True                   144.0               144.700623
+ PT08.S4(NO2)         366             1391.479641    1456.264598              1391.479641                   True                  True                   536.0               536.743642
+  PT08.S5(O3)         366              975.072032    1022.906128               975.072032                   True                  True                   490.0               490.394236
+            T         366                9.778305      18.317829                 9.778305                   True                  True                     NaN                46.789344
+           RH         366               39.485380      49.234201                39.485380                   True                  True                     NaN                54.800724
+           AH         366               -6.837604       1.025530                -6.837604                   True                  True                     NaN                41.687478
+10:37:50    legacy check: 0.07 s
+10:37:50 == figures
+10:37:51 figures written: fig16_value_functions_CO_T.png, fig6_flat_random.png, fig15_adult_schema.png
+10:37:51    figures: 1.06 s
+10:37:51 SANITY CO(GT) intercept a0 = 2.0907; observed mean 2.1527 (expected about 2): ok
+10:37:51 SANITY T intercept a0 = 18.1404; observed mean 18.3178 (expected about 18): ok
+10:37:51 TOTAL run time 142.0 s
+10:37:51 run record written

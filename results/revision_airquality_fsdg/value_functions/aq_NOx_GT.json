@@ -1,0 +1,30 @@
+{
+ "format": 1,
+ "kind": "declarative",
+ "spec": {
+  "name": "aq_NOx_GT",
+  "doc": "Fourier approximation of the Air Quality series NOx(GT) (cleaned; i = hours since 2004-03-10 18:00): intercept, 5 largest FFT components and Gaussian noise with the residual SD.",
+  "params": {
+   "a0": 246.61120017099498,
+   "a1": 140.84139565599708,
+   "f1": 0.00010687186063909372,
+   "p1": -3.03931613051457,
+   "a2": 79.32469244231527,
+   "f2": 0.041680025649246555,
+   "p2": 1.8200700221873296,
+   "a3": 63.084847147397404,
+   "f3": 0.08336005129849311,
+   "p3": -0.7301301642386973,
+   "a4": 42.962207806461294,
+   "f4": 0.04157315378860746,
+   "p4": -0.2255934321763844,
+   "a5": 37.87002147930144,
+   "f5": 0.08325317943785401,
+   "p5": -2.9760694984599825,
+   "s": 160.8916865106995
+  },
+  "expression": "a0 + a1 * np.sin(2 * np.pi * f1 * i + p1) + a2 * np.sin(2 * np.pi * f2 * i + p2) + a3 * np.sin(2 * np.pi * f3 * i + p3) + a4 * np.sin(2 * np.pi * f4 * i + p4) + a5 * np.sin(2 * np.pi * f5 * i + p5) + np.random.normal(0, s)"
+ },
+ "sha256": "8992bc9badfcbfc3fc0236563f94dc1b23b92d2ffc56311a449be7aea7228e74",
+ "hmac_sha256": "f8ec3879ce9ad6537fb9bdfc1e102c5d1ae04057910f9507a0d08fef518058a7"
+}

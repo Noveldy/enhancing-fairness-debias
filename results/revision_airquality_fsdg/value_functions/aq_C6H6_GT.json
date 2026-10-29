@@ -1,0 +1,30 @@
+{
+ "format": 1,
+ "kind": "declarative",
+ "spec": {
+  "name": "aq_C6H6_GT",
+  "doc": "Fourier approximation of the Air Quality series C6H6(GT) (cleaned; i = hours since 2004-03-10 18:00): intercept, 5 largest FFT components and Gaussian noise with the residual SD.",
+  "params": {
+   "a0": 10.045783905097787,
+   "a1": 3.9620873867436845,
+   "f1": 0.041680025649246555,
+   "p1": 1.822692076213074,
+   "a2": 3.0249093604264816,
+   "f2": 0.08336005129849311,
+   "p2": -0.3483427938617205,
+   "a3": 1.9916502727201668,
+   "f3": 0.005984824195789248,
+   "p3": 0.5237025961832611,
+   "a4": 1.8185746946875245,
+   "f4": 0.00021374372127818745,
+   "p4": 0.01880319757469273,
+   "a5": 1.4318554903965965,
+   "f5": 0.0356952014534573,
+   "p5": 3.052353996326299,
+   "s": 6.144222302752931
+  },
+  "expression": "a0 + a1 * np.sin(2 * np.pi * f1 * i + p1) + a2 * np.sin(2 * np.pi * f2 * i + p2) + a3 * np.sin(2 * np.pi * f3 * i + p3) + a4 * np.sin(2 * np.pi * f4 * i + p4) + a5 * np.sin(2 * np.pi * f5 * i + p5) + np.random.normal(0, s)"
+ },
+ "sha256": "0391b626e6bdb8fdb8ec6e2ea65c2f361fc8ca779d5da79908926ee467daa1fc",
+ "hmac_sha256": "d569418bcbaf3d3452f6906dc6ab872df42dee51bf6867c61dc086d970e3b6bb"
+}

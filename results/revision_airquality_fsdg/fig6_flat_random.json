@@ -1,0 +1,15 @@
+{
+ "format": 1,
+ "kind": "declarative",
+ "spec": {
+  "name": "flat_random",
+  "doc": "Uniform random values between min_val and max_val.",
+  "params": {
+   "min_val": 0,
+   "max_val": 10
+  },
+  "expression": "np.random.uniform(min_val, max_val)"
+ },
+ "sha256": "16175d961fce310b49ffb0f320afaed57b7c4d3b1381e0dcb087b80cf908cf24",
+ "hmac_sha256": "ab24a82c8220be91eb96b1f64306506c43fc7de12c56b3a0eba87f78aa2554e2"
+}

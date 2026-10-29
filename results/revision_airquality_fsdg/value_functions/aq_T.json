@@ -1,0 +1,30 @@
+{
+ "format": 1,
+ "kind": "declarative",
+ "spec": {
+  "name": "aq_T",
+  "doc": "Fourier approximation of the Air Quality series T (cleaned; i = hours since 2004-03-10 18:00): intercept, 5 largest FFT components and Gaussian noise with the residual SD.",
+  "params": {
+   "a0": 18.140365501763384,
+   "a1": 10.214899324359335,
+   "f1": 0.00010687186063909372,
+   "p1": -0.6037425868665434,
+   "a2": 4.287717744463213,
+   "f2": 0.041680025649246555,
+   "p2": 1.9112402843607512,
+   "a3": 1.352372552777329,
+   "f3": 0.0003206155819172812,
+   "p3": 1.542615922335087,
+   "a4": 1.3289462620204835,
+   "f4": 0.04157315378860746,
+   "p4": -2.0652117411828046,
+   "a5": 1.3232777851332964,
+   "f5": 0.00021374372127818745,
+   "p5": 2.586239568827546,
+   "s": 3.6823701221802043
+  },
+  "expression": "a0 + a1 * np.sin(2 * np.pi * f1 * i + p1) + a2 * np.sin(2 * np.pi * f2 * i + p2) + a3 * np.sin(2 * np.pi * f3 * i + p3) + a4 * np.sin(2 * np.pi * f4 * i + p4) + a5 * np.sin(2 * np.pi * f5 * i + p5) + np.random.normal(0, s)"
+ },
+ "sha256": "be12af24eeb26794855bcc460bd756ff7088bab4315a99209b992a69d093985f",
+ "hmac_sha256": "a5ce8edd7a017a32f849e54cd0e505e00ac58296a61e90ecd0f6dfdb67dfbbf8"
+}

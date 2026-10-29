@@ -1,0 +1,30 @@
+{
+ "format": 1,
+ "kind": "declarative",
+ "spec": {
+  "name": "aq_PT08_S2_NMHC",
+  "doc": "Fourier approximation of the Air Quality series PT08.S2(NMHC) (cleaned; i = hours since 2004-03-10 18:00): intercept, 5 largest FFT components and Gaussian noise with the residual SD.",
+  "params": {
+   "a0": 937.953510740622,
+   "a1": 160.8602501563521,
+   "f1": 0.041680025649246555,
+   "p1": 1.7974010782263479,
+   "a2": 110.79303227480477,
+   "f2": 0.08336005129849311,
+   "p2": -0.5066295639310359,
+   "a3": 70.99007998397202,
+   "f3": 0.005984824195789248,
+   "p3": 0.41474613359065904,
+   "a4": 62.04818795456005,
+   "f4": 0.00021374372127818745,
+   "p4": -0.011634045905883461,
+   "a5": 50.26724035327759,
+   "f5": 0.0356952014534573,
+   "p5": 3.0405364632500103,
+   "s": 214.29013189802785
+  },
+  "expression": "a0 + a1 * np.sin(2 * np.pi * f1 * i + p1) + a2 * np.sin(2 * np.pi * f2 * i + p2) + a3 * np.sin(2 * np.pi * f3 * i + p3) + a4 * np.sin(2 * np.pi * f4 * i + p4) + a5 * np.sin(2 * np.pi * f5 * i + p5) + np.random.normal(0, s)"
+ },
+ "sha256": "f9c1cb177307287a5e35370ddfb482dacaa7bca1d539ca501199302f2d3cedb4",
+ "hmac_sha256": "2266de845054657f4d8bb7d5267a832cf5c817fa175f07db6234f37a3f334183"
+}

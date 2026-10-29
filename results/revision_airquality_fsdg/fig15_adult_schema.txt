@@ -1,0 +1,16 @@
+{
+  "age": {
+    "type": "int",
+    "distribution": "truncnorm",
+    "mean": 38.55,
+    "std": 13.22,
+    "min": 17,
+    "max": 90,
+    "clip": true
+  },
+  "marital-status": {
+    "type": "category",
+    "categories": ["Married-civ-spouse", "Never-married", "Divorced", ...],
+    "weights": [0.466, 0.323, 0.139, ...]
+  }
+}

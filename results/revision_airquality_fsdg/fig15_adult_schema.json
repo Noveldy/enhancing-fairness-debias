@@ -1,0 +1,32 @@
+{
+  "age": {
+    "type": "int",
+    "distribution": "truncnorm",
+    "mean": 38.547941267524656,
+    "std": 13.217870219055518,
+    "min": 17.0,
+    "max": 90.0,
+    "clip": true
+  },
+  "marital-status": {
+    "type": "category",
+    "categories": [
+      "Married-civ-spouse",
+      "Never-married",
+      "Divorced",
+      "Separated",
+      "Widowed",
+      "Married-spouse-absent",
+      "Married-AF-spouse"
+    ],
+    "weights": [
+      0.4655919685109018,
+      0.32280748308345497,
+      0.13924638450311796,
+      0.03120162752642519,
+      0.028238468002299767,
+      0.01220644818893459,
+      0.0007076201848657732
+    ]
+  }
+}
